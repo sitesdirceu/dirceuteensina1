@@ -31,6 +31,7 @@ import personaCriador from "@/assets/persona-criador.jpg";
 import personaDesempregado from "@/assets/persona-desempregado.jpg";
 import personaEmpreendedor from "@/assets/persona-empreendedor.jpg";
 import personaAposentado from "@/assets/persona-aposentado.jpg";
+import dirceuHistoria from "@/assets/dirceu-historia.jpg";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -284,6 +285,12 @@ function LandingPage() {
       <section className="border-t border-border py-20">
         <div className="container mx-auto grid gap-10 px-4 md:grid-cols-2 md:items-center">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
+            <img
+              src={dirceuHistoria}
+              alt="Dirceu Souza trabalhando de casa desde 2015"
+              className="absolute inset-0 h-full w-full object-cover"
+              loading="lazy"
+            />
             <div
               className="absolute inset-0"
               style={{
@@ -299,9 +306,6 @@ function LandingPage() {
               style={{ color: "var(--primary)" }}
             >
               2015
-            </div>
-            <div className="flex h-full w-full items-center justify-center text-muted-foreground">
-              <Users className="h-24 w-24 opacity-30" />
             </div>
           </div>
 
@@ -378,16 +382,13 @@ function LandingPage() {
           </p>
 
           <div className="mx-auto mt-10 aspect-video max-w-3xl overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-glow)]">
-            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-card to-background">
-              <button className="group flex flex-col items-center gap-3">
-                <span className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground transition group-hover:scale-110">
-                  <Play className="ml-1 h-10 w-10 fill-current" />
-                </span>
-                <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-                  Assista o vídeo e confira meus resultados
-                </span>
-              </button>
-            </div>
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/immoxacbJjs"
+              title="Meus Resultados Trabalhando do Canto do Meu Quarto"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
             Clique para assistir minha história de transformação
