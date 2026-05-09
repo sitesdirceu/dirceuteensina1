@@ -514,40 +514,6 @@ function LandingPage() {
               </div>
             ))}
 
-            <div className="rounded-2xl border border-primary/40 bg-primary/5 p-6 md:col-span-2 lg:col-span-3">
-              <div className="flex items-start gap-4">
-                <div className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                  <Target className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Afiliados Frustrados</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Tentou vender como afiliado e só teve prejuízo? Eu também já
-                    passei por isso! Aprenda a criar seus próprios produtos e
-                    pare de depender de comissões baixas.
-                  </p>
-                  <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                    Plataformas que você já tentou:
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {["Hotmart", "Kiwify", "Shopee", "Mercado Livre", "Amazon", "Braip"].map(
-                      (p) => (
-                        <span
-                          key={p}
-                          className="rounded-md border border-border bg-background px-3 py-1 text-xs"
-                        >
-                          {p}
-                        </span>
-                      ),
-                    )}
-                  </div>
-                  <p className="mt-4 text-sm font-semibold text-primary">
-                    ✨ Chega de depender dessas plataformas! Aprenda a criar o
-                    SEU próprio produto digital.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
