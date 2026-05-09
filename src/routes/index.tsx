@@ -168,7 +168,7 @@ const faqs = [
   },
   {
     q: "Tem suporte para tirar dúvidas?",
-    a: "Sim! Oferecemos suporte por e-mail através do formulário de contato disponível na página. Nossa equipe responde o mais rápido possível para te ajudar em cada etapa da sua jornada.",
+    a: "Sim! O suporte é direto comigo, por e-mail. Basta clicar no link Contato no final do site e me enviar sua dúvida, que eu respondo o mais rápido possível.",
   },
   {
     q: "Funciona para qualquer nicho?",
