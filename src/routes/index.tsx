@@ -33,16 +33,16 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Aprenda como faturar de R$1.000 a R$9.955/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
+          "Aprenda como faturar de R$50 a R$2499,57/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
       },
     ],
   }),
 });
 
 const stats = [
-  { value: "10+", label: "Anos de Experiência" },
+  { value: "11", label: "Anos de Experiência" },
   { value: "100%", label: "Online" },
-  { value: "Suporte", label: "Via E-mail" },
+  { value: "Suporte", label: "Direto Comigo" },
 ];
 
 const beforeItems = [
@@ -131,7 +131,7 @@ const faqs = [
   },
   {
     q: "O que é vendido na área de membros?",
-    a: "Aulas em vídeo passo a passo, materiais de apoio, modelos prontos, atualizações constantes e suporte direto via WhatsApp.",
+    a: "Aulas em vídeo passo a passo, materiais de apoio, modelos prontos, atualizações constantes e suporte direto comigo.",
   },
   {
     q: "Por quanto tempo terei acesso ao conteúdo?",
@@ -197,8 +197,8 @@ function LandingPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
               Aprenda comigo agora em 2026 passo a passo, clique a clique como
               eu faço para faturar de{" "}
-              <span className="font-semibold text-primary">R$1.000</span> a{" "}
-              <span className="font-semibold text-primary">R$9.955,00</span> por
+              <span className="font-semibold text-primary">R$50</span> a{" "}
+              <span className="font-semibold text-primary">R$2499,57</span> por
               mês ou até mais trabalhando de casa, criando e vendendo Landing
               Pages de serviços Locais usando Inteligência Artificial sem gastar
               um único centavo. Se eu consigo, você também consegue!
@@ -364,7 +364,7 @@ function LandingPage() {
 
           <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
             {[
-              { v: "10+", l: "Anos Online", icon: Clock },
+              { v: "11", l: "Anos Online", icon: Clock },
               { v: "100%", l: "Home Office", icon: Home },
               { v: "0", l: "Chefes", icon: XCircle },
               { v: "∞", l: "Liberdade", icon: InfinityIcon },
@@ -608,14 +608,13 @@ function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-primary">
-              Fale Conosco
+              Suporte Direto Comigo
             </span>
             <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
-              Entre em Contato por E-mail
+              Fale Diretamente Comigo
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tem alguma dúvida sobre a área de membros? Preencha o formulário
-              abaixo e nossa equipe responderá o mais rápido possível.
+              Aqui o suporte é <span className="font-bold text-primary">direto comigo</span>, sem intermediários. Preencha o formulário abaixo e eu te respondo o mais rápido possível.
             </p>
           </div>
 
@@ -707,7 +706,7 @@ function LandingPage() {
               <span className="font-bold text-primary">DIRCEU TE ENSINA?</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
-              Envie uma mensagem pelo formulário de contato e responderemos por e-mail o mais rápido possível! ✉️
+              Envie sua mensagem pelo formulário de contato — o suporte é <span className="font-bold text-primary">direto comigo</span> e respondo o mais rápido possível!
             </p>
 
             <a
