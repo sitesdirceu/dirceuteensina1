@@ -6,12 +6,11 @@ import {
   Laptop,
   Wifi,
   Heart,
-  MessageCircle,
+  Mail,
   Play,
   Clock,
   MapPin,
   Infinity as InfinityIcon,
-  TrendingUp,
   Users,
   GraduationCap,
   Briefcase,
@@ -43,7 +42,7 @@ export const Route = createFileRoute("/")({
 const stats = [
   { value: "10+", label: "Anos de Experiência" },
   { value: "100%", label: "Online" },
-  { value: "Suporte", label: "Via WhatsApp" },
+  { value: "Suporte", label: "Via E-mail" },
 ];
 
 const beforeItems = [
@@ -140,7 +139,7 @@ const faqs = [
   },
   {
     q: "Tem suporte para tirar dúvidas?",
-    a: "Sim! Suporte direto comigo via WhatsApp para te ajudar em cada etapa da sua jornada.",
+    a: "Sim! Oferecemos suporte por e-mail através do formulário de contato disponível na página. Nossa equipe responde o mais rápido possível para te ajudar em cada etapa da sua jornada.",
   },
   {
     q: "Funciona para qualquer nicho?",
