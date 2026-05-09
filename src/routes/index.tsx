@@ -193,7 +193,7 @@ function LandingPage() {
             <span>DIRCEU TE ENSINA</span>
           </div>
           <a
-            href="#contato"
+            href="#contato-footer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
           >
             <Mail className="h-4 w-4" /> Contato
