@@ -1,26 +1,650 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import {
+  CheckCircle2,
+  XCircle,
+  Laptop,
+  Wifi,
+  Heart,
+  MessageCircle,
+  Play,
+  Clock,
+  MapPin,
+  Infinity as InfinityIcon,
+  TrendingUp,
+  Users,
+  GraduationCap,
+  Briefcase,
+  Youtube,
+  Target,
+  Home,
+  Calendar,
+  DollarSign,
+  BookOpen,
+  Award,
+  ChevronDown,
+  Sparkles,
+} from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: LandingPage,
+  head: () => ({
+    meta: [
+      { title: "Dirceu Te Ensina - Dinheiro Online Desde 2015" },
+      {
+        name: "description",
+        content:
+          "Aprenda como faturar de R$1.000 a R$9.955/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+const stats = [
+  { value: "10+", label: "Anos de Experiência" },
+  { value: "100%", label: "Online" },
+  { value: "Suporte", label: "Via WhatsApp" },
+];
+
+const beforeItems = [
+  "Trabalhando 8+ horas por dia para os outros",
+  "Chefe mandando em cada passo",
+  "Salário fixo que não cobria as despesas",
+  "Trânsito estressante todos os dias",
+  "Pouquíssimo tempo com a família",
+  "Estresse e ansiedade constantes",
+  "Sem perspectiva de crescimento real",
+];
+
+const afterItems = [
+  "Trabalhando apenas 2-5 horas por dia para mim",
+  "Eu sou meu próprio patrão",
+  "Renda ilimitada e crescente todos os meses",
+  "Trabalhando de onde quiser, até de pijama",
+  "Todo o tempo do mundo para quem amo",
+  "Paz interior e satisfação pessoal",
+  "Liberdade total para crescer",
+];
+
+const personas = [
+  {
+    icon: Heart,
+    title: "Mães que Querem Trabalhar em Casa",
+    desc: "Você sonha em conciliar a maternidade com uma renda extra, sem precisar deixar seus filhos? Este método foi feito para você!",
+  },
+  {
+    icon: GraduationCap,
+    title: "Estudantes Buscando Independência",
+    desc: "Cansado de depender dos pais ou de trabalhos precários? Aprenda a gerar sua própria renda enquanto estuda!",
+  },
+  {
+    icon: Briefcase,
+    title: "Profissionais Insatisfeitos",
+    desc: "Já não aguenta mais seu trabalho atual, chefe exigente e horários que sugam sua energia? Chegou a hora de mudar!",
+  },
+  {
+    icon: Youtube,
+    title: "Criadores de Canais Dark Frustrados",
+    desc: "Seu canal dark não monetizou ou foi derrubado? Aprenda a criar conteúdo que gera renda de forma sustentável e segura!",
+  },
+];
+
+const benefits = [
+  {
+    icon: Home,
+    title: "Trabalhe de Onde Quiser",
+    desc: "Esqueça o trânsito e o escritório. Trabalhe do conforto da sua casa, da praia ou de qualquer lugar do mundo.",
+  },
+  {
+    icon: Calendar,
+    title: "Seu Próprio Horário",
+    desc: "Tenha liberdade para definir quando e quanto trabalhar. Aproveite a vida ao máximo com quem você ama!",
+  },
+  {
+    icon: DollarSign,
+    title: "Renda Ilimitada",
+    desc: "Sem teto de ganhos. Quanto mais você se dedica, mais você pode ganhar. O limite é você quem define.",
+  },
+  {
+    icon: BookOpen,
+    title: "Aprendizado Contínuo",
+    desc: "Acesso a técnicas atualizadas e estratégias que funcionam no mercado digital atual, sempre em evolução.",
+  },
+  {
+    icon: Award,
+    title: "Método Comprovado",
+    desc: "Técnicas testadas e aprovadas desde 2015. Siga um caminho já traçado para o sucesso financeiro.",
+  },
+];
+
+const faqs = [
+  {
+    q: "Preciso ter experiência com internet para começar?",
+    a: "Não! O método foi pensado para iniciantes. Se você sabe ligar um computador e acessar a internet, já tem o suficiente para começar. Eu te ensino tudo do zero, passo a passo.",
+  },
+  {
+    q: "Quanto tempo leva para ver os primeiros resultados?",
+    a: "Depende da sua dedicação. Alunos que aplicam o método consistentemente costumam ver os primeiros resultados entre 30 e 60 dias.",
+  },
+  {
+    q: "Preciso investir dinheiro além do curso?",
+    a: "Não. O método foi desenhado para você começar gastando R$0,00. Você usa ferramentas gratuitas e Inteligência Artificial.",
+  },
+  {
+    q: "O que é vendido na área de membros?",
+    a: "Aulas em vídeo passo a passo, materiais de apoio, modelos prontos, atualizações constantes e suporte direto via WhatsApp.",
+  },
+  {
+    q: "Por quanto tempo terei acesso ao conteúdo?",
+    a: "Acesso vitalício. Você compra uma vez e tem acesso para sempre, incluindo todas as atualizações futuras.",
+  },
+  {
+    q: "Tem suporte para tirar dúvidas?",
+    a: "Sim! Suporte direto comigo via WhatsApp para te ajudar em cada etapa da sua jornada.",
+  },
+  {
+    q: "Funciona para qualquer nicho?",
+    a: "Sim. O método é aplicável a praticamente qualquer nicho de serviços locais: dentistas, advogados, estética, mecânicas e muito mais.",
+  },
+  {
+    q: "Posso assistir as aulas pelo celular?",
+    a: "Claro! A área de membros é 100% responsiva. Você assiste pelo celular, tablet ou computador.",
+  },
+];
+
+function LandingPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Top WhatsApp bar */}
+      <div className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+        <div className="container mx-auto flex items-center justify-between px-4 py-3">
+          <div className="flex items-center gap-2 text-sm font-semibold">
+            <Sparkles className="h-4 w-4 text-primary" />
+            <span>DIRCEU TE ENSINA</span>
+          </div>
+          <a
+            href="#whatsapp"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-4 py-2 text-xs font-bold text-background transition hover:opacity-90"
+          >
+            <MessageCircle className="h-4 w-4" /> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      {/* HERO */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 -z-10"
+          style={{ background: "var(--gradient-hero)" }}
+        />
+        <div className="absolute inset-0 -z-10 opacity-20 [background:radial-gradient(circle_at_30%_20%,var(--primary),transparent_60%)]" />
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-primary">
+              <Sparkles className="h-3.5 w-3.5" />
+              Desde 2015 vivendo 100% da internet
+            </span>
+            <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-6xl">
+              Vou Te Ensinar Como Faço{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                Dinheiro Online Desde 2015
+              </span>
+            </h1>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Aprenda comigo agora em 2026 passo a passo, clique a clique como
+              eu faço para faturar de{" "}
+              <span className="font-semibold text-primary">R$1.000</span> a{" "}
+              <span className="font-semibold text-primary">R$9.955,00</span> por
+              mês ou até mais trabalhando de casa, criando e vendendo Landing
+              Pages de serviços Locais usando Inteligência Artificial sem gastar
+              um único centavo. Se eu consigo, você também consegue!
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              {[
+                { icon: Laptop, label: "Notebook ou Computador" },
+                { icon: Wifi, label: "Acesso à Internet" },
+                { icon: Heart, label: "Vontade de Mudar" },
+              ].map(({ icon: Icon, label }) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm"
+                >
+                  <Icon className="h-4 w-4 text-primary" /> {label}
+                </span>
+              ))}
+            </div>
+
+            <a
+              href="#cta"
+              className="mt-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-base font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
+              style={{ background: "var(--gradient-primary)" }}
+            >
+              Quero Começar Agora
+            </a>
+
+            <p className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">
+              Método comprovado desde 2015
+            </p>
+
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {stats.map((s) => (
+                <div key={s.label} className="rounded-xl border border-border bg-card/60 p-4">
+                  <div className="text-2xl font-extrabold text-primary md:text-3xl">
+                    {s.value}
+                  </div>
+                  <div className="mt-1 text-xs text-muted-foreground md:text-sm">
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HISTORY */}
+      <section className="border-t border-border py-20">
+        <div className="container mx-auto grid gap-10 px-4 md:grid-cols-2 md:items-center">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 50%, oklch(0.16 0.02 250 / 0.9) 100%)",
+              }}
+            />
+            <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
+              Trabalhando de casa desde
+            </div>
+            <div
+              className="absolute bottom-6 left-6 text-6xl font-black"
+              style={{ color: "var(--primary)" }}
+            >
+              2015
+            </div>
+            <div className="flex h-full w-full items-center justify-center text-muted-foreground">
+              <Users className="h-24 w-24 opacity-30" />
+            </div>
+          </div>
+
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-primary">
+              Minha História
+            </span>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              De Demitido a{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                Livre Financeiramente
+              </span>
+            </h2>
+            <div className="mt-6 space-y-4 text-muted-foreground">
+              <p>
+                Até 2015, eu estava exatamente onde você provavelmente está
+                agora: dentro do velho ciclo "acorda-trabalha-dorme", no sufoco
+                do trânsito, enfrentando ônibus lotados, encarando metas e
+                prazos que não me traziam nada.
+              </p>
+              <p>
+                Aquele ano foi um divisor de águas, pois tomei uma das decisões
+                mais ousadas da minha vida: larguei minha carteira assinada e
+                comecei a buscar o tal do dinheiro online. Na verdade, eu fui{" "}
+                <span className="font-bold text-primary">"DEMITIDO"</span>.
+              </p>
+              <p>
+                Confesso, não foi fácil no início. Tive medo, receio do
+                desconhecido, e a insegurança sobre como eu ia me sustentar e
+                sustentar minha família, apertava o coração.
+              </p>
+              <p>
+                Mas a vontade de ter liberdade, de construir algo meu, era maior
+                que tudo isso. Então, eu me joguei de cabeça.
+              </p>
+              <p className="font-semibold text-foreground">
+                Testei, errei, ajustei. E, finalmente encontrei o caminho certo!
+              </p>
+              <blockquote className="rounded-xl border-l-4 border-primary bg-card p-5 italic text-foreground">
+                "Hoje, eu vivo dessa liberdade que um dia só existia nos meus
+                sonhos. Quando vou ao mercado, não preciso mais escolher entre
+                uma coisa e outra. Posso proporcionar o que há de melhor para
+                minha família."
+                <footer className="mt-3 text-sm not-italic text-muted-foreground">
+                  — Dirceu Souza, de Joinville-SC para o Mundo
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* RESULTS / VIDEO */}
+      <section className="border-t border-border bg-card/30 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">
+            Resultados Reais
+          </span>
+          <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold md:text-4xl">
+            Meus Resultados Trabalhando do{" "}
+            <span
+              className="bg-clip-text text-transparent"
+              style={{ backgroundImage: "var(--gradient-primary)" }}
+            >
+              Canto do Meu Quarto
+            </span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Veja com seus próprios olhos como é possível construir uma vida de
+            liberdade trabalhando de casa, com apenas um computador e internet.
+          </p>
+
+          <div className="mx-auto mt-10 aspect-video max-w-3xl overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-glow)]">
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-card to-background">
+              <button className="group flex flex-col items-center gap-3">
+                <span className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground transition group-hover:scale-110">
+                  <Play className="ml-1 h-10 w-10 fill-current" />
+                </span>
+                <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+                  Assista o vídeo e confira meus resultados
+                </span>
+              </button>
+            </div>
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Clique para assistir minha história de transformação
+          </p>
+
+          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
+            {[
+              { v: "10+", l: "Anos Online", icon: Clock },
+              { v: "100%", l: "Home Office", icon: Home },
+              { v: "0", l: "Chefes", icon: XCircle },
+              { v: "∞", l: "Liberdade", icon: InfinityIcon },
+            ].map((s) => (
+              <div
+                key={s.l}
+                className="rounded-xl border border-border bg-card p-5"
+              >
+                <s.icon className="mx-auto h-6 w-6 text-primary" />
+                <div className="mt-2 text-3xl font-extrabold">{s.v}</div>
+                <div className="text-xs text-muted-foreground">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BEFORE / AFTER */}
+      <section className="border-t border-border py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary">
+              A Transformação
+            </span>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              Vem Comigo Nessa Jornada?
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              Compare a vida que você tem hoje com a vida que você pode
+              conquistar
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-6">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-destructive/15 px-3 py-1 text-xs font-bold uppercase text-destructive">
+                <XCircle className="h-4 w-4" /> Antes
+              </div>
+              <ul className="space-y-3">
+                {beforeItems.map((it) => (
+                  <li key={it} className="flex items-start gap-3 text-sm">
+                    <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
+                    <span className="text-muted-foreground">{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-[var(--success)]/30 bg-[var(--success)]/5 p-6">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--success)]/15 px-3 py-1 text-xs font-bold uppercase text-[var(--success)]">
+                <CheckCircle2 className="h-4 w-4" /> Depois
+              </div>
+              <ul className="space-y-3">
+                {afterItems.map((it) => (
+                  <li key={it} className="flex items-start gap-3 text-sm">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--success)]" />
+                    <span className="text-foreground">{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PERSONAS */}
+      <section className="border-t border-border bg-card/30 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary">
+              Para Quem É?
+            </span>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              Para Quem É Este Método?
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              Se você se identifica com algum desses perfis, esse é o seu momento
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-6xl gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {personas.map((p) => (
+              <div
+                key={p.title}
+                className="rounded-2xl border border-border bg-card p-6 transition hover:border-primary/50"
+              >
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                  <p.icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+              </div>
+            ))}
+
+            <div className="rounded-2xl border border-primary/40 bg-primary/5 p-6 md:col-span-2 lg:col-span-3">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+                  <Target className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">Afiliados Frustrados</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Tentou vender como afiliado e só teve prejuízo? Eu também já
+                    passei por isso! Aprenda a criar seus próprios produtos e
+                    pare de depender de comissões baixas.
+                  </p>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Plataformas que você já tentou:
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {["Hotmart", "Kiwify", "Shopee", "Mercado Livre", "Amazon", "Braip"].map(
+                      (p) => (
+                        <span
+                          key={p}
+                          className="rounded-md border border-border bg-background px-3 py-1 text-xs"
+                        >
+                          {p}
+                        </span>
+                      ),
+                    )}
+                  </div>
+                  <p className="mt-4 text-sm font-semibold text-primary">
+                    ✨ Chega de depender dessas plataformas! Aprenda a criar o
+                    SEU próprio produto digital.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFITS */}
+      <section className="border-t border-border py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary">
+              Benefícios
+            </span>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              Vantagens Exclusivas
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              Descubra por que dezenas de pessoas já estão transformando suas vidas
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-6xl gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {benefits.map((b) => (
+              <div
+                key={b.title}
+                className="rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:border-primary/50"
+              >
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                  <b.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{b.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t border-border bg-card/30 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary">
+              Dúvidas Frequentes
+            </span>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              Perguntas que Todo Mundo Faz
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              Separei as dúvidas mais comuns para te ajudar a decidir
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-3xl space-y-3">
+            {faqs.map((f, i) => {
+              const open = openFaq === i;
+              return (
+                <div
+                  key={f.q}
+                  className="overflow-hidden rounded-xl border border-border bg-card"
+                >
+                  <button
+                    onClick={() => setOpenFaq(open ? null : i)}
+                    className="flex w-full items-center justify-between gap-4 p-5 text-left text-sm font-semibold transition hover:bg-muted/30"
+                  >
+                    <span>{f.q}</span>
+                    <ChevronDown
+                      className={`h-5 w-5 shrink-0 text-primary transition-transform ${
+                        open ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {open && (
+                    <div className="border-t border-border px-5 py-4 text-sm text-muted-foreground">
+                      {f.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary/30 bg-primary/5 p-6 text-center">
+            <p className="text-sm font-semibold">Ainda tem alguma dúvida?</p>
+            <a
+              href="#whatsapp"
+              className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
+            >
+              <MessageCircle className="h-4 w-4" />
+              💬 Me chama no WhatsApp que eu te respondo!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section id="cta" className="border-t border-border py-20">
+        <div className="container mx-auto px-4 text-center">
+          <a
+            href="#whatsapp"
+            className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
+            style={{ background: "var(--gradient-primary)" }}
+          >
+            SIM! EU QUERO COMEÇAR AGORA
+          </a>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Clique no botão e comece sua jornada de transformação
+          </p>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer
+        id="whatsapp"
+        className="border-t border-border bg-card/40 py-12"
+      >
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-primary/30 bg-card p-6 text-center">
+            <h3
+              className="text-2xl font-black"
+              style={{ color: "var(--primary)" }}
+            >
+              DIRCEU SOUZA
+            </h3>
+            <p className="mt-1 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+              <MapPin className="h-4 w-4" />
+              De Joinville - SC para o Mundo!!
+            </p>
+
+            <p className="mt-6 text-sm">
+              🤔 Ainda tem alguma dúvida sobre a área de membros{" "}
+              <span className="font-bold text-primary">DIRCEU TE ENSINA?</span>
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Me chama no WhatsApp que te respondo o mais rápido possível! 📲
+            </p>
+
+            <a
+              href="https://wa.me/"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-bold text-background transition hover:opacity-90"
+            >
+              <MessageCircle className="h-4 w-4" />
+              💬 Falar no WhatsApp
+            </a>
+          </div>
+
+          <div className="mt-8 flex flex-col items-center gap-2 text-xs text-muted-foreground">
+            <div className="flex items-center gap-3">
+              <a href="#" className="hover:text-primary">Contato</a>
+              <span>|</span>
+              <a href="#" className="hover:text-primary">Política de Privacidade</a>
+            </div>
+            <p>© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
