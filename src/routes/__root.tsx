@@ -75,11 +75,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Dirceu Te Ensina - Aprenda a Fazer Dinheiro Online Desde 2015" },
       { name: "description", content: "Aprenda passo a passo como faturar de R$1.000 a R$9.955/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015." },
       { name: "author", content: "Dirceu Souza" },
-      { property: "og:title", content: "Dirceu Te Ensina - Dinheiro Online Desde 2015" },
-      { property: "og:description", content: "Trabalhe de casa criando Landing Pages com IA. Método validado por mais de 10 anos." },
+      { property: "og:title", content: "Dirceu Te Ensina - Aprenda a Fazer Dinheiro Online Desde 2015" },
+      { property: "og:description", content: "Aprenda passo a passo como faturar de R$1.000 a R$9.955/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Dirceu Te Ensina - Aprenda a Fazer Dinheiro Online Desde 2015" },
+      { name: "twitter:description", content: "Aprenda passo a passo como faturar de R$1.000 a R$9.955/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bb79b70c-cac6-4a80-837c-0537e915eaf9/id-preview-3641ab8a--41425889-ac8e-4861-9f3f-d69a33b32787.lovable.app-1778366087113.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bb79b70c-cac6-4a80-837c-0537e915eaf9/id-preview-3641ab8a--41425889-ac8e-4861-9f3f-d69a33b32787.lovable.app-1778366087113.png" },
     ],
     links: [
       {
