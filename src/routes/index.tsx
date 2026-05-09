@@ -190,10 +190,12 @@ function LandingPage() {
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2 text-sm font-semibold">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span>DIRCEU TE ENSINA</span>
+            <span>DIRCEU TE ENSINA 2.0 - LPSLs</span>
           </div>
           <a
-            href="#contato-footer"
+            href="https://promowebcenter.com/contato/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
           >
             <Mail className="h-4 w-4" /> Contato
@@ -684,7 +686,7 @@ function LandingPage() {
 
           <div id="contato-footer" className="mt-8 flex flex-col items-center gap-2 text-xs text-muted-foreground">
             <div className="flex items-center gap-3">
-              <a href="mailto:contato@dirceuteensina.com.br" className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
+              <a href="https://promowebcenter.com/contato/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
                 <Mail className="h-3.5 w-3.5" /> Contato
               </a>
               <span>|</span>
