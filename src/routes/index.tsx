@@ -190,10 +190,12 @@ function LandingPage() {
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2 text-sm font-semibold">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span>DIRCEU TE ENSINA</span>
+            <span>DIRCEU TE ENSINA 2.0 - LPSLs</span>
           </div>
           <a
-            href="#contato-footer"
+            href="https://promowebcenter.com/contato/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
           >
             <Mail className="h-4 w-4" /> Contato
