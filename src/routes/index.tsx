@@ -462,14 +462,25 @@ function LandingPage() {
       <section className="border-t border-border bg-card/30 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary">
-              Para Quem É?
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+              <Target className="h-3.5 w-3.5" /> Para Quem É?
             </span>
-            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
-              Para Quem É Este Método?
+            <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">
+              Este Método é{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                Feito Para Você
+              </span>
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-              Se você se identifica com algum desses perfis, esse é o seu momento
+            <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
+              Se você se identifica com{" "}
+              <span className="font-bold text-foreground">qualquer um</span>{" "}
+              desses perfis, pode ter certeza:{" "}
+              <span className="font-bold text-primary">
+                esse é o seu momento de virar o jogo!
+              </span>
             </p>
           </div>
 
@@ -477,13 +488,26 @@ function LandingPage() {
             {personas.map((p) => (
               <div
                 key={p.title}
-                className="rounded-2xl border border-border bg-card p-6 transition hover:border-primary/50"
+                className="group overflow-hidden rounded-2xl border border-border bg-card transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
-                  <p.icon className="h-6 w-6" />
+                <div className="relative aspect-[3/2] overflow-hidden bg-muted">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    width={768}
+                    height={512}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                  <div className="absolute left-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg">
+                    <p.icon className="h-5 w-5" />
+                  </div>
                 </div>
-                <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold">{p.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+                </div>
               </div>
             ))}
 
