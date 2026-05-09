@@ -686,7 +686,7 @@ function LandingPage() {
 
           <div id="contato-footer" className="mt-8 flex flex-col items-center gap-2 text-xs text-muted-foreground">
             <div className="flex items-center gap-3">
-              <a href="mailto:contato@dirceuteensina.com.br" className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
+              <a href="https://promowebcenter.com/contato/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
                 <Mail className="h-3.5 w-3.5" /> Contato
               </a>
               <span>|</span>
