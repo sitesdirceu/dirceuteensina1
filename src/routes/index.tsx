@@ -168,7 +168,7 @@ const faqs = [
   },
   {
     q: "Tem suporte para tirar dúvidas?",
-    a: "Sim! Oferecemos suporte por e-mail através do formulário de contato disponível na página. Nossa equipe responde o mais rápido possível para te ajudar em cada etapa da sua jornada.",
+    a: "Sim! O suporte é direto comigo, por e-mail. Basta clicar no link Contato no final do site e me enviar sua dúvida, que eu respondo o mais rápido possível.",
   },
   {
     q: "Funciona para qualquer nicho?",
@@ -193,7 +193,7 @@ function LandingPage() {
             <span>DIRCEU TE ENSINA</span>
           </div>
           <a
-            href="#contato"
+            href="#contato-footer"
             className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
           >
             <Mail className="h-4 w-4" /> Contato
@@ -626,14 +626,14 @@ function LandingPage() {
           </div>
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary/30 bg-primary/5 p-6 text-center">
-            <p className="text-sm font-semibold">Ainda tem alguma dúvida?</p>
-            <a
-              href="#contato"
-              className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
-            >
-              <Mail className="h-4 w-4" />
-              ✉️ Envie sua dúvida pelo formulário de contato
-            </a>
+            <p className="text-sm font-semibold">Ainda tem alguma dúvida sobre o treinamento?</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Entre em contato pelo link{" "}
+              <a href="#contato-footer" className="font-bold text-primary hover:underline">
+                Contato
+              </a>{" "}
+              no final do site que eu te respondo o mais rápido possível.
+            </p>
           </div>
         </div>
       </section>
@@ -653,87 +653,6 @@ function LandingPage() {
           <p className="mt-4 text-sm text-muted-foreground">
             Clique no botão e comece sua jornada de transformação
           </p>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contato" className="border-t border-border bg-card/30 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary">
-              Suporte Direto Comigo
-            </span>
-            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
-              Fale Diretamente Comigo
-            </h2>
-            <p className="mt-3 text-muted-foreground">
-              Aqui o suporte é <span className="font-bold text-primary">direto comigo</span>, sem intermediários. Preencha o formulário abaixo e eu te respondo o mais rápido possível.
-            </p>
-          </div>
-
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Mensagem enviada! Em breve responderemos seu e-mail.");
-              (e.target as HTMLFormElement).reset();
-            }}
-            className="mx-auto mt-10 max-w-2xl space-y-4 rounded-2xl border border-border bg-card p-6"
-          >
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Nome
-                </label>
-                <input
-                  required
-                  type="text"
-                  className="mt-1 w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
-                  placeholder="Seu nome"
-                />
-              </div>
-              <div>
-                <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  E-mail
-                </label>
-                <input
-                  required
-                  type="email"
-                  className="mt-1 w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
-                  placeholder="seu@email.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                Assunto
-              </label>
-              <input
-                required
-                type="text"
-                className="mt-1 w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
-                placeholder="Sobre o que você quer falar?"
-              />
-            </div>
-            <div>
-              <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                Mensagem
-              </label>
-              <textarea
-                required
-                rows={5}
-                className="mt-1 w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
-                placeholder="Escreva sua dúvida ou mensagem..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.01]"
-              style={{ background: "var(--gradient-primary)" }}
-            >
-              <Mail className="h-4 w-4" />
-              Enviar Mensagem
-            </button>
-          </form>
         </div>
       </section>
 
@@ -759,21 +678,15 @@ function LandingPage() {
               <span className="font-bold text-primary">DIRCEU TE ENSINA?</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
-              Envie sua mensagem pelo formulário de contato — o suporte é <span className="font-bold text-primary">direto comigo</span> e respondo o mais rápido possível!
+              Use o link <span className="font-bold text-primary">Contato</span> abaixo — o suporte é <span className="font-bold text-primary">direto comigo</span> e respondo o mais rápido possível!
             </p>
-
-            <a
-              href="#contato"
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground transition hover:opacity-90"
-            >
-              <Mail className="h-4 w-4" />
-              ✉️ Ir para o Formulário
-            </a>
           </div>
 
-          <div className="mt-8 flex flex-col items-center gap-2 text-xs text-muted-foreground">
+          <div id="contato-footer" className="mt-8 flex flex-col items-center gap-2 text-xs text-muted-foreground">
             <div className="flex items-center gap-3">
-              <a href="#contato" className="hover:text-primary">Contato</a>
+              <a href="mailto:contato@dirceuteensina.com.br" className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">
+                <Mail className="h-3.5 w-3.5" /> Contato
+              </a>
               <span>|</span>
               <a href="#" className="hover:text-primary">Política de Privacidade</a>
             </div>
