@@ -231,9 +231,15 @@ function LandingPage() {
               eu faço para faturar de{" "}
               <span className="font-semibold text-primary">R$50</span> a{" "}
               <span className="font-semibold text-primary">R$2499,57</span> por
-              mês ou até mais trabalhando de casa, criando e vendendo Landing
-              Pages de serviços Locais usando Inteligência Artificial sem gastar
-              um único centavo. Se eu consigo, você também consegue!
+              mês ou até mais trabalhando de casa, criando e vendendo{" "}
+              <span className="font-extrabold text-primary underline decoration-primary/40 underline-offset-4">
+                Landing Pages de serviços Locais
+              </span>{" "}
+              usando{" "}
+              <span className="font-extrabold text-primary underline decoration-primary/40 underline-offset-4">
+                Inteligência Artificial sem gastar um único centavo
+              </span>
+              . Se eu consigo, você também consegue!
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -252,7 +258,7 @@ function LandingPage() {
             </div>
 
             <a
-              href="https://pay.cakto.com.br/fteuzyn_790930"
+              href="https://promowebcenter.com/botao-site-checkout"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-base font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
