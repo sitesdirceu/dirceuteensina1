@@ -617,7 +617,7 @@ function LandingPage() {
       <section id="cta" className="border-t border-border py-20">
         <div className="container mx-auto px-4 text-center">
           <a
-            href="https://pay.cakto.com.br/fteuzyn_790930"
+            href="https://promowebcenter.com/botao-site-checkout"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
