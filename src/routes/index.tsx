@@ -257,6 +257,16 @@ function LandingPage() {
               ))}
             </div>
 
+            <div className="mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-glow)]">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/Eu0WOPbCpz4"
+                title="Apresentação do treinamento"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+
             <a
               href="https://promowebcenter.com/botao-site-checkout"
               target="_blank"
@@ -390,7 +400,7 @@ function LandingPage() {
           <div className="mx-auto mt-10 aspect-video max-w-3xl overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-glow)]">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed/immoxacbJjs"
+              src="https://www.youtube.com/embed/Z54J_yYQI4A"
               title="Meus Resultados Trabalhando do Canto do Meu Quarto"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
