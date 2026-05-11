@@ -260,7 +260,7 @@ function LandingPage() {
             <div className="mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-glow)]">
               <iframe
                 className="h-full w-full"
-                src="https://www.youtube.com/embed/Eu0WOPbCpz4"
+                src="https://www.youtube.com/embed/Eu0WOPbCpz4?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0"
                 title="Apresentação do treinamento"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -400,7 +400,7 @@ function LandingPage() {
           <div className="mx-auto mt-10 aspect-video max-w-3xl overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-glow)]">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed/Z54J_yYQI4A"
+              src="https://www.youtube.com/embed/Z54J_yYQI4A?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0"
               title="Meus Resultados Trabalhando do Canto do Meu Quarto"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
