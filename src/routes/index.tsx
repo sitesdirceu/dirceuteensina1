@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const title = "Renda Extra com IA: Crie Landing Pages e Fature até R$4.986/mês";
     const description = "Aprenda como faturar uma renda extra de R$50 a R$4986,93/mês criando Landing Pages para serviços locais com IA. Método comprovado e lucrativo.";
-    const url = "https://dirceuteensina.lovable.app";
+     const url = "https://cursorendaextraia.vercel.app";
 
     return {
       meta: [
