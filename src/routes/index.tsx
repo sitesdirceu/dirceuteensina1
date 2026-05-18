@@ -40,8 +40,7 @@ export const Route = createFileRoute("/")({
       { title: "Dirceu Te Ensina - Dinheiro Online Desde 2015" },
       {
         name: "description",
-        content:
-          "Aprenda como faturar de R$50 a R$2499,57/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
+        content: "Aprenda como faturar uma renda extra de R$50 a R$4986,93/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
       },
     ],
   }),
@@ -228,9 +227,9 @@ function LandingPage() {
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
               Aprenda comigo agora em 2026 passo a passo, clique a clique como
-              eu faço para faturar de{" "}
+              eu faço para faturar uma renda extra de{" "}
               <span className="font-semibold text-primary">R$50</span> a{" "}
-              <span className="font-semibold text-primary">R$2499,57</span> por
+              <span className="font-semibold text-primary">R$4986,93</span> por
               mês ou até mais trabalhando de casa, criando e vendendo{" "}
               <span className="font-extrabold text-primary underline decoration-primary/40 underline-offset-4">
                 Landing Pages de serviços Locais
