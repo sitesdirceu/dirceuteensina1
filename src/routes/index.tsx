@@ -35,15 +35,50 @@ import dirceuHistoria from "@/assets/dirceu-historia.jpg";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
-  head: () => ({
-    meta: [
-      { title: "Dirceu Te Ensina - Dinheiro Online Desde 2015" },
-      {
-        name: "description",
-        content: "Aprenda como faturar uma renda extra de R$50 a R$4986,93/mês criando Landing Pages para serviços locais com IA. Método comprovado desde 2015.",
-      },
-    ],
-  }),
+  head: () => {
+    const title = "Renda Extra com IA: Crie Landing Pages e Fature até R$4.986/mês";
+    const description = "Aprenda como faturar uma renda extra de R$50 a R$4986,93/mês criando Landing Pages para serviços locais com IA. Método comprovado e lucrativo.";
+    const url = "https://dirceuteensina.lovable.app";
+
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+      ],
+      links: [
+        { rel: "canonical", href: url },
+      ],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Renda Extra com IA: Landing Pages para Serviços Locais",
+            "description": description,
+            "provider": {
+              "@type": "Person",
+              "name": "Dirceu Souza",
+              "sameAs": url
+            },
+            "offers": {
+              "@type": "Offer",
+              "category": "Paid",
+              "price": "97.00",
+              "priceCurrency": "BRL",
+              "url": "https://promowebcenter.com/botao-site-checkout"
+            }
+          })
+        }
+      ]
+    };
+  },
 });
 
 const stats = [
