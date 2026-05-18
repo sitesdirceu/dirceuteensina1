@@ -1,11 +1,6 @@
  {
-   "version": 2,
-   "public": true,
-   "cleanUrls": true,
-   "rewrites": [
-     {
-       "source": "/(.*)",
-       "destination": "/"
-     }
-   ]
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
  }
