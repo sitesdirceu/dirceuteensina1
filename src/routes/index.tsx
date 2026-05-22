@@ -1019,23 +1019,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section id="cta" className="border-t border-border py-20">
-        <div className="container mx-auto px-4 text-center">
-          <a
-            href="https://promowebcenter.com/botao-site-checkout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
-            style={{ background: "var(--gradient-primary)" }}
-          >
-            SIM! EU QUERO COMEÇAR A FATURAR EM 3 DIAS
-          </a>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Clique no botão e comece sua jornada de transformação
-          </p>
-        </div>
-      </section>
 
       {/* FOOTER */}
       <footer
