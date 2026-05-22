@@ -39,6 +39,8 @@ import personaEmpreendedor from "@/assets/persona-empreendedor.jpg";
 import personaAposentado from "@/assets/persona-aposentado.jpg";
 import dirceuHistoria from "@/assets/dirceu-historia.jpg";
 import dirceuFoto from "@/assets/dirceu-te-ensina.png";
+import preguiçosoHomem from "@/assets/preguicoso-homem.jpg";
+import preguiçosaMulher from "@/assets/preguicoso-mulher.jpg";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -842,6 +844,77 @@ function LandingPage() {
       </section>
 
 
+
+      {/* ALIGNMENT SECTION (NOT FOR LAZY PEOPLE) */}
+      <section className="py-24 border-t border-border bg-destructive/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto rounded-[3rem] border-4 border-destructive/50 bg-background p-8 md:p-16 relative overflow-hidden shadow-[0_0_50px_rgba(239,68,68,0.2)]">
+            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+              <XCircle className="w-64 h-64 text-destructive" strokeWidth={0.5} />
+            </div>
+
+            <div className="relative z-10 text-center space-y-8">
+              <div className="inline-flex items-center gap-2 rounded-full bg-destructive px-6 py-2 text-sm font-black uppercase tracking-widest text-destructive-foreground animate-pulse">
+                ⚠️ LEIA COM ATENÇÃO: NÃO É PARA TODOS
+              </div>
+              
+              <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-destructive uppercase">
+                Este treinamento <span className="underline decoration-destructive underline-offset-8">NÃO É</span> para quem busca dinheiro fácil!
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 mt-10">
+                <div className="space-y-4">
+                  <div className="aspect-video overflow-hidden rounded-2xl border-4 border-destructive/20 shadow-xl">
+                    <img 
+                      src={preguiçosoHomem} 
+                      alt="Homem preguiçoso achando que dinheiro cai do céu" 
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                  <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que o dinheiro cai do céu?</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="aspect-video overflow-hidden rounded-2xl border-4 border-destructive/20 shadow-xl">
+                    <img 
+                      src={preguiçosaMulher} 
+                      alt="Mulher preguiçosa esperando milagre" 
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                  <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que vai ganhar sem fazer nada?</p>
+                </div>
+              </div>
+
+              <div className="max-w-3xl mx-auto space-y-6 text-lg md:text-xl font-medium leading-relaxed">
+                <p className="bg-destructive/10 p-6 rounded-2xl border-l-8 border-destructive text-destructive font-black uppercase">
+                  Se você está entrando apenas para "testar" e pedir reembolso logo em seguida... <span className="underline">POR FAVOR, NEM ENTRE!</span>
+                </p>
+                
+                <p className="text-foreground">
+                  O meu tempo e o seu tempo são valiosos. Se tiver dúvidas antes de entrar, <a href="https://promowebcenter.com/contato/" target="_blank" rel="noopener noreferrer" className="text-primary font-bold underline hover:text-primary/80">me pergunte no link de contato</a>. 
+                </p>
+
+                <div className="bg-primary/5 p-8 rounded-[2rem] border-2 border-primary/20 space-y-4">
+                  <h3 className="text-2xl font-black text-primary uppercase">PENSAMENTO ALINHADO:</h3>
+                  <p className="text-foreground font-bold">
+                    Somente entre no treinamento se você estiver comprometido em:
+                  </p>
+                  <div className="flex flex-col md:flex-row justify-center gap-4 text-left md:text-center">
+                    <div className="bg-background p-4 rounded-xl border border-primary/10 flex-1">
+                      <span className="text-3xl font-black text-primary block mb-2">01.</span>
+                      <p className="text-sm font-bold">ESTUDAR PRIMEIRO TODAS AS AULAS</p>
+                    </div>
+                    <div className="bg-background p-4 rounded-xl border border-primary/10 flex-1">
+                      <span className="text-3xl font-black text-primary block mb-2">02.</span>
+                      <p className="text-sm font-bold">APLICAR O QUE APRENDEU COM CONSISTÊNCIA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* GUARANTEE SECTION */}
       <section className="py-24 border-t border-border">
