@@ -888,7 +888,7 @@ function LandingPage() {
               </div>
 
               <div className="space-y-2">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary">Apenas hoje por apenas:</p>
+                <p className="text-sm font-bold uppercase tracking-widest text-primary">Hoje por apenas:</p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-2xl font-bold">12x de</span>
                   <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 6,73</span>
