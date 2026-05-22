@@ -214,13 +214,13 @@ const personas = [
   },
   {
     icon: Laptop,
-    image: personaCriador,
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF0vcv5RHihLjdytwlrYeuVDAWQMVM1f5uC0zns4CQ86ApXDAgleYNFH22w0S247jYQEtqBuXWrmFPcoeZU-iYuuKByZiFTyx_SRmM6PRrGXnb0gdBrhKEFtj0xhQUL6vEgvRjhhgTtPmc0rMOqwRQwWqMoBVXYUN3L4k7UWFrgdPKxzKt3vBwng47WbM/s16000/Freelancers_Designers_IA_entrega%E2%80%A6_202605221348.jpeg",
     title: "Freelancers e Designers",
     desc: "Já trabalha na área mas demora dias para entregar uma página? Aprenda a usar a IA para entregar em minutos, cobrar mais caro e atender 10x mais clientes!",
   },
   {
     icon: Home,
-    image: personaDesempregado,
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicFHVrZSosQjAqJ7g3upyiQe2MXDQixqCwJe_kjNyZEKEOpkckhTLHhzWaoGelRDxdxbz_hwgvevLvPbd7dtilx0h8t-qBStP0rAkTu-Hnf9N9avyVrLdAKpc6bYwoI37MjhKNa0OUzeOAgsa_jsXJl9r-930BCOub0zILMhluQBvUnyph8_WsJEN0PPM/s16000/Quem_busca_transi%C3%A7%C3%A3o_carreira_se%E2%80%A6_202605221349.jpeg",
     title: "Quem Busca Transição de Carreira",
     desc: "Sente que seu mercado está saturado ou sem futuro? Migre para a área que mais cresce no mundo e garanta sua segurança financeira com uma habilidade de alta demanda.",
   },
