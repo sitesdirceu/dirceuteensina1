@@ -38,6 +38,7 @@ import personaDesempregado from "@/assets/persona-desempregado.jpg";
 import personaEmpreendedor from "@/assets/persona-empreendedor.jpg";
 import personaAposentado from "@/assets/persona-aposentado.jpg";
 import dirceuHistoria from "@/assets/dirceu-historia.jpg";
+import dirceuFoto from "@/assets/dirceu-te-ensina.png";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -997,7 +998,7 @@ function LandingPage() {
             <div className="mt-4 flex justify-center">
               <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-primary shadow-[0_0_15px_rgba(var(--primary-rgb),0.8)]">
                 <img
-                  src="/uploads/dirceu-te-ensina.png"
+                  src={dirceuFoto}
                   alt="Dirceu Souza"
                   className="h-full w-full object-cover"
                 />
