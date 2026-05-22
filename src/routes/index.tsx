@@ -242,6 +242,18 @@ const faqs = [
 
 function LandingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [onlineCount, setOnlineCount] = useState(24);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOnlineCount(prev => {
+        const change = Math.floor(Math.random() * 5) - 2; // -2 to +2
+        const next = prev + change;
+        return Math.min(Math.max(next, 10), 30);
+      });
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
