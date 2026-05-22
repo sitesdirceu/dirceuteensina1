@@ -93,6 +93,52 @@ const stats = [
   { value: "Suporte", label: "Direto Comigo" },
 ];
 
+const modules = [
+  {
+    title: "Módulo 1: Mentalidade e Liberdade",
+    desc: "Prepare sua mente para sair da CLT e assumir o controle total da sua vida financeira.",
+    icon: Target,
+  },
+  {
+    title: "Módulo 2: O Poder da IA na Prática",
+    desc: "As ferramentas secretas que eu uso para criar landing pages profissionais em minutos.",
+    icon: Cpu,
+  },
+  {
+    title: "Módulo 3: Criando Landing Pages que Vendem",
+    desc: "Clique a clique, sem precisar de código, criando páginas de alto padrão.",
+    icon: Laptop,
+  },
+  {
+    title: "Módulo 4: Prospecção de Clientes Reais",
+    desc: "Onde encontrar empresas que pagam bem e como fechar contratos sem parecer um vendedor.",
+    icon: MapPin,
+  },
+  {
+    title: "Módulo 5: Escala e Quadruplicação",
+    desc: "Como gerenciar seu novo negócio home office e escalar seus ganhos mensais.",
+    icon: Zap,
+  },
+];
+
+const bonuses = [
+  {
+    title: "Script de Abordagem Irresistível",
+    desc: "O que falar para o cliente para fechar a venda rapidamente.",
+    value: "R$ 197,00",
+  },
+  {
+    title: "Meus Modelos Prontos",
+    desc: "Páginas que eu já usei para faturar alto, prontas para você usar.",
+    value: "R$ 497,00",
+  },
+  {
+    title: "Suporte VIP Direto Comigo",
+    desc: "Acesso ao meu suporte pessoal para tirar todas as suas dúvidas.",
+    value: "INESTIMÁVEL",
+  },
+];
+
 const beforeItems = [
   "Trabalhando 8+ horas por dia para os outros",
   "Chefe mandando em cada passo",
