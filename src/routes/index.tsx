@@ -23,6 +23,7 @@ import {
   Award,
   ChevronDown,
   Sparkles,
+  ArrowRight,
 } from "lucide-react";
 import personaMae from "@/assets/persona-mae.jpg";
 import personaEstudante from "@/assets/persona-estudante.jpg";
