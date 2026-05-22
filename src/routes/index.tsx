@@ -272,7 +272,7 @@ function LandingPage() {
           <div className="flex items-center gap-4">
             <div className="hidden items-center gap-2 text-[10px] font-bold md:flex">
               <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
-              1.240 ALUNOS ONLINE AGORA
+              {onlineCount} ALUNOS ONLINE AGORA
             </div>
             <a
               href="https://promowebcenter.com/contato/"
