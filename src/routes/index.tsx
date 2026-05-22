@@ -1014,8 +1014,6 @@ function LandingPage() {
                 <Mail className="h-3.5 w-3.5" /> Contato
               </a>
               <span>|</span>
-              <a href="/afiliados" className="hover:text-primary">Afiliados</a>
-              <span>|</span>
               <a href="#" className="hover:text-primary">Política de Privacidade</a>
             </div>
             <p>© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
