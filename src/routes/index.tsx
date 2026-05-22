@@ -730,7 +730,7 @@ function LandingPage() {
             className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
             style={{ background: "var(--gradient-primary)" }}
           >
-            SIM! EU QUERO COMEÇAR AGORA
+            SIM! EU QUERO COMEÇAR A FATURAR EM 3 DIAS
           </a>
           <p className="mt-4 text-sm text-muted-foreground">
             Clique no botão e comece sua jornada de transformação
