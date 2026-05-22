@@ -280,7 +280,7 @@ function LandingPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-black uppercase text-primary-foreground shadow-lg shadow-primary/20 transition hover:scale-105"
             >
-              <Mail className="h-4 w-4" /> Suporte VIP
+              <Mail className="h-4 w-4" /> Contato
             </a>
           </div>
         </div>
