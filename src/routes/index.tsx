@@ -267,7 +267,7 @@ function LandingPage() {
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2 text-sm font-black tracking-tighter">
             <span className="bg-primary px-2 py-0.5 text-primary-foreground">DIRCEU</span>
-            <span className="hidden md:inline">TE ENSINA 2.0</span>
+            <span className="hidden md:inline text-xs">TE ENSINA 2.0 - LPSLs</span>
           </div>
           <div className="flex items-center gap-4">
             <div className="hidden items-center gap-2 text-[10px] font-bold md:flex">
@@ -1001,7 +1001,7 @@ function LandingPage() {
 
             <p className="mt-6 text-sm">
               🤔 Ainda tem alguma dúvida sobre a área de membros{" "}
-              <span className="font-bold text-primary">DIRCEU TE ENSINA?</span>
+              <span className="font-bold text-primary">DIRCEU TE ENSINA 2.0 - LPSLs?</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Use o link <span className="font-bold text-primary">Contato</span> abaixo — o suporte é <span className="font-bold text-primary">direto comigo</span> e respondo o mais rápido possível!
