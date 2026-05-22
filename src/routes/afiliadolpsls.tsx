@@ -188,7 +188,7 @@ function AffiliatesPage() {
               Focados em ganhar dinheiro de forma correta e profissional. Quem trabalha certo, vende muito. 🔥
             </p>
             <a
-              href="https://promowebcenter.com/contato/"
+              href="https://www.treinamento.dirceuteensina.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-background px-8 py-4 text-sm font-black uppercase text-primary transition hover:scale-105 active:scale-95"
