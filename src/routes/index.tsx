@@ -525,6 +525,7 @@ function LandingPage() {
             </p>
           </div>
         </div>
+      </section>
 
       {/* BEFORE / AFTER */}
       <section className="border-t border-border py-20">
