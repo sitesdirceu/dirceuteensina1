@@ -859,7 +859,7 @@ function LandingPage() {
               </div>
               
               <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-destructive uppercase">
-                Este treinamento <span className="underline decoration-destructive underline-offset-8">NÃO É</span> para quem busca dinheiro fácil!
+                Este treinamento <span className="underline decoration-destructive underline-offset-8">NÃO É</span> para quem acha que dinheiro nasce em árvore!
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8 mt-10">
