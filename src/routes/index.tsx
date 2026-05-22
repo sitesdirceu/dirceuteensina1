@@ -266,9 +266,9 @@ function LandingPage() {
               href="https://promowebcenter.com/contato/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-black uppercase text-primary-foreground shadow-lg shadow-primary/20 transition hover:scale-105"
             >
-              <Mail className="h-4 w-4" /> Suporte
+              <Mail className="h-4 w-4" /> Suporte VIP
             </a>
           </div>
         </div>
