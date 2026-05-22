@@ -37,6 +37,7 @@ import personaCriador from "@/assets/persona-criador.jpg";
 import personaDesempregado from "@/assets/persona-desempregado.jpg";
 import personaEmpreendedor from "@/assets/persona-empreendedor.jpg";
 import personaAposentado from "@/assets/persona-aposentado.jpg";
+import personaAfiliado from "@/assets/persona-afiliado-frustrado.png";
 import dirceuHistoria from "@/assets/dirceu-historia.jpg";
 import dirceuFoto from "@/assets/dirceu-te-ensina.png";
 import preguiçosoHomem from "@/assets/preguicoso-homem.png";
@@ -207,7 +208,7 @@ const personas = [
   },
   {
     icon: XCircle,
-    image: personaCriador, // Usando uma imagem existente como fallback
+    image: personaAfiliado,
     title: "Afiliados Frustrados",
     desc: "Tenta vender na Hotmart, Kiwify, Cakto, Mercado Livre ou Shopee e só gasta com curso sem ter retorno? Pare de lutar contra o algoritmo e aprenda a vender um serviço de verdade!",
   },
