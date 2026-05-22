@@ -1014,7 +1014,7 @@ function LandingPage() {
                 <Mail className="h-3.5 w-3.5" /> Contato
               </a>
               <span>|</span>
-              <a href="/slug" className="hover:text-primary">Afiliados</a>
+              <a href="/afiliados" className="hover:text-primary">Afiliados</a>
               <span>|</span>
               <a href="#" className="hover:text-primary">Política de Privacidade</a>
             </div>

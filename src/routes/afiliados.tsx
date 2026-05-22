@@ -12,7 +12,7 @@ import {
   Home
 } from "lucide-react";
 
-export const Route = createFileRoute("/slug")({
+export const Route = createFileRoute("/afiliados")({
   component: AffiliatesPage,
   head: () => {
     const title = "Programa de Afiliados - Dirceu Te Ensina";
