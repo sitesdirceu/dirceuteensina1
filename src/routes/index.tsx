@@ -155,28 +155,28 @@ const personas = [
 const benefits = [
   {
     icon: Home,
+    title: "Liberdade Home Office Real",
+    desc: "Trabalhe do conforto da sua casa, sem trânsito, sem chefe buzinando no seu ouvido e sem horários impostos por terceiros.",
+  },
+  {
+    icon: Laptop,
+    title: "Você é o Único Patrão",
+    desc: "Chega de receber ordens. Você decide quais clientes atender, quanto cobrar e qual será sua rotina diária.",
+  },
+  {
+    icon: Wifi,
     title: "Trabalhe de Onde Quiser",
-    desc: "Esqueça o trânsito e o escritório. Trabalhe do conforto da sua casa, da praia ou de qualquer lugar do mundo.",
+    desc: "Sua única ferramenta é um computador e internet. Pode ser da sua sala, da praia ou viajando o mundo.",
   },
   {
     icon: Calendar,
-    title: "Seu Próprio Horário",
-    desc: "Tenha liberdade para definir quando e quanto trabalhar. Aproveite a vida ao máximo com quem você ama!",
+    title: "Controle Total do Seu Tempo",
+    desc: "Quer trabalhar de madrugada? Ou prefere as manhãs livres para ficar com seus filhos? A escolha é 100% sua.",
   },
   {
     icon: DollarSign,
-    title: "Renda Ilimitada",
-    desc: "Sem teto de ganhos. Quanto mais você se dedica, mais você pode ganhar. O limite é você quem define.",
-  },
-  {
-    icon: BookOpen,
-    title: "Aprendizado Contínuo",
-    desc: "Acesso a técnicas atualizadas e estratégias que funcionam no mercado digital atual, sempre em evolução.",
-  },
-  {
-    icon: Award,
-    title: "Método Comprovado",
-    desc: "Técnicas testadas e aprovadas desde 2015. Siga um caminho já traçado para o sucesso financeiro.",
+    title: "Faturamento Sem Limites",
+    desc: "Diferente de um emprego comum, aqui não existe teto salarial. Quanto mais você produz com IA, mais você fatura.",
   },
 ];
 
