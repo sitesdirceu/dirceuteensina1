@@ -205,6 +205,12 @@ const personas = [
     title: "Aposentados que Querem Renda Extra",
     desc: "Aposentadoria não está dando conta das contas e você quer complementar a renda trabalhando em casa, no seu ritmo? Esse método é simples, didático e perfeito para você!",
   },
+  {
+    icon: XCircle,
+    image: personaCriador, // Usando uma imagem existente como fallback
+    title: "Afiliados Frustrados",
+    desc: "Tenta vender na Hotmart, Kiwify, Cakto, Mercado Livre ou Shopee e só gasta com curso sem ter retorno? Pare de lutar contra o algoritmo e aprenda a vender um serviço de verdade!",
+  },
 ];
 
 
