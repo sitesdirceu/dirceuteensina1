@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
   CheckCircle2,
@@ -1015,6 +1015,8 @@ function LandingPage() {
               </a>
               <span>|</span>
               <a href="#" className="hover:text-primary">Política de Privacidade</a>
+              <span>|</span>
+              <Link to="/afiliadolpsls" className="hover:text-primary">Afiliados</Link>
             </div>
             <p>© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
           </div>
