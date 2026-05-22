@@ -313,15 +313,23 @@ function LandingPage() {
               />
             </div>
 
-            <a
-              href="https://promowebcenter.com/botao-site-checkout"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-base font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
-              style={{ background: "var(--gradient-primary)" }}
-            >
-              Quero Começar Agora
-            </a>
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <a
+                href="https://promowebcenter.com/botao-site-checkout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl px-10 py-5 text-lg font-black uppercase tracking-wider text-primary-foreground shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] transition-all hover:scale-[1.05] hover:shadow-[0_0_35px_rgba(var(--primary-rgb),0.6)]"
+                style={{ background: "var(--gradient-primary)" }}
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Quero Minha Liberdade Agora <ArrowRight className="h-6 w-6 animate-bounce-x" />
+                </span>
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+              </a>
+              <p className="flex items-center gap-2 text-sm font-bold text-primary animate-pulse">
+                <Users className="h-4 w-4" /> 127 pessoas entraram nas últimas 24h
+              </p>
+            </div>
 
             <p className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">
               Método comprovado desde 2015
