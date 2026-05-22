@@ -908,17 +908,13 @@ function LandingPage() {
               
               <div className="space-y-4 max-w-md mx-auto">
                 <div className="flex justify-between items-center text-muted-foreground line-through decoration-destructive decoration-2">
-                  <span>Treinamento Completo:</span>
-                  <span>R$ 497,00</span>
-                </div>
-                <div className="flex justify-between items-center text-muted-foreground line-through decoration-destructive decoration-2">
-                  <span>Todos os Bônus:</span>
-                  <span>R$ 791,00</span>
+                  <span>Preço Original:</span>
+                  <span>R$ 197,00</span>
                 </div>
                 <div className="h-px bg-border w-full" />
                 <div className="flex justify-between items-center text-xl font-bold">
-                  <span>VALOR TOTAL:</span>
-                  <span className="text-destructive">R$ 1.288,00</span>
+                  <span>DESCONTO DE 66%:</span>
+                  <span className="text-green-500">- R$ 130,00</span>
                 </div>
               </div>
 
@@ -926,9 +922,9 @@ function LandingPage() {
                 <p className="text-sm font-bold uppercase tracking-widest text-primary">Apenas hoje por apenas:</p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-2xl font-bold">12x de</span>
-                  <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 9,74</span>
+                  <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 6,73</span>
                 </div>
-                <p className="text-xl font-bold">ou R$ 97,00 à vista</p>
+                <p className="text-xl font-bold">ou R$ 67,00 à vista</p>
               </div>
 
               <div className="pt-6">
