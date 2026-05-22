@@ -226,7 +226,7 @@ const personas = [
   },
   {
     icon: Zap,
-    image: personaAposentado,
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaSNonvg92xXXcLA3YTBh2qh-gx83i4D6mqJ5b00ZSI6fY6XOjqhPWmr2F9D_u1hE22vvjjdwzGvedFTPpJkSfZg2kGbbfwocRg43gAUseLwAIPE2tL0yEboSLCdyyZKQ4jSrPyhx1luccoFxq7sBEi2f3E_SBjkIXUTixiVIzrQ2r9cnVPqOOhmbhrWU/s16000/Jovens_buscam_primeiro_neg%C3%B3cio_202605221353.jpeg",
     title: "Jovens em Busca do Primeiro Negócio",
     desc: "Não quer seguir o caminho tradicional de faculdade e emprego fixo? Comece seu próprio negócio digital do zero, com baixo investimento e alto potencial de lucro.",
   },
