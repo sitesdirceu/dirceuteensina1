@@ -994,7 +994,17 @@ function LandingPage() {
             >
               DIRCEU SOUZA
             </h3>
-            <p className="mt-1 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <div className="mt-4 flex justify-center">
+              <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-primary shadow-[0_0_15px_rgba(var(--primary-rgb),0.8)]">
+                <img
+                  src="/uploads/dirceu-te-ensina.png"
+                  alt="Dirceu Souza"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 rounded-full border-2 border-primary animate-pulse opacity-50"></div>
+              </div>
+            </div>
+            <p className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4" />
               De Joinville - SC para o Mundo!!
             </p>
