@@ -870,7 +870,10 @@ function LandingPage() {
             </div>
 
             <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tighter">FAÇA SUA MATRÍCULA AGORA</h2>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase">Oferta Especial de Lançamento</h2>
+              <p className="text-lg font-bold text-destructive animate-pulse">
+                ATENÇÃO: Este valor promocional pode subir a qualquer momento sem aviso prévio. Aproveite o descontão agora!
+              </p>
               
               <div className="space-y-4 max-w-md mx-auto">
                 <div className="flex justify-between items-center text-muted-foreground line-through decoration-destructive decoration-2">
