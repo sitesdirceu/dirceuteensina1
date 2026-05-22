@@ -187,7 +187,7 @@ const faqs = [
   },
   {
     q: "Quanto tempo leva para ver os primeiros resultados?",
-    a: "Depende da sua dedicação. Alunos que aplicam o método consistentemente costumam ver os primeiros resultados entre 3 e 10 dias, mas é claro que vai depender muito do seu esforço e dedicação.",
+    a: "Depende da sua dedicação. Alunos que aplicam o método consistentemente costumam ver os primeiros resultados em apenas 3 dias, mas é claro que vai depender muito do seu esforço e dedicação.",
   },
   {
     q: "Preciso investir dinheiro além do curso?",
