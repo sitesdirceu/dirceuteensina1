@@ -646,7 +646,7 @@ function LandingPage() {
                   <Cpu className="w-5 h-5" /> O Poder da IA
                 </h3>
                 <p className="text-foreground leading-relaxed font-medium">
-                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão com poucos cliques.
+                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão trabalhando de forma inteligente e correta.
                 </p>
                 <div className="mt-4 flex items-center gap-2 text-primary font-black text-sm uppercase">
                   <Zap className="w-4 h-4 fill-primary" /> Rápido, simples e lucrativo.
