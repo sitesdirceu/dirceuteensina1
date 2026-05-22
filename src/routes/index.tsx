@@ -603,7 +603,7 @@ function LandingPage() {
               FATURAR SEUS PRIMEIROS REAIS EM 3 DIAS
             </div>
             <p className="mt-6 text-muted-foreground">
-              Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem precisar de anos de estudo. Eu te dou o passo a passo exato.
+              Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem anos de estudo. Você só precisa trabalhar da forma correta para ter resultados reais.
             </p>
           </div>
         </div>
