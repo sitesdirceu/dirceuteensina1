@@ -24,6 +24,9 @@ import {
   ChevronDown,
   Sparkles,
   ArrowRight,
+  Zap,
+  Cpu,
+  Layers,
 } from "lucide-react";
 import personaMae from "@/assets/persona-mae.jpg";
 import personaEstudante from "@/assets/persona-estudante.jpg";
@@ -602,6 +605,89 @@ function LandingPage() {
             <p className="mt-6 text-muted-foreground">
               Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem precisar de anos de estudo. Eu te dou o passo a passo exato.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* EVOLUTION SECTION */}
+      <section className="border-t border-border py-24 bg-background overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">A Nova Era da Criação</span>
+            <h2 className="mt-4 text-3xl md:text-5xl font-black">Do Arcaico ao <span className="text-primary">Ilimitado</span></h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="p-8 rounded-2xl border border-destructive/20 bg-destructive/5 relative">
+                <div className="absolute -top-4 -left-4 bg-destructive text-destructive-foreground px-4 py-1 rounded-lg font-bold text-sm transform -rotate-3">
+                  ERA ARCAICA
+                </div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Layers className="w-5 h-5 text-destructive" /> WordPress e Elementor
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Antes das IAs, eu perdia dias configurando WordPress, lidando com Elementor, plugins pesados que travavam o site e ferramentas complexas. Era um trabalho braçal, cansativo e que exigia meses de estudo para ficar "bom". Hoje, essas ferramentas se tornaram **arcaicas**.
+                </p>
+                <div className="mt-4 flex items-center gap-2 text-destructive font-bold text-sm">
+                  <XCircle className="w-4 h-4" /> Lento, difícil e caro.
+                </div>
+              </div>
+
+              <div className="flex justify-center md:justify-start">
+                <ArrowRight className="w-8 h-8 text-primary rotate-90 md:rotate-0" />
+              </div>
+
+              <div className="p-8 rounded-2xl border border-primary/30 bg-primary/5 relative">
+                <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-4 py-1 rounded-lg font-bold text-sm transform rotate-3">
+                  ERA DA INTELIGÊNCIA ARTIFICIAL
+                </div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-primary">
+                  <Cpu className="w-5 h-5" /> O Poder da IA
+                </h3>
+                <p className="text-foreground leading-relaxed font-medium">
+                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão com poucos cliques.
+                </p>
+                <div className="mt-4 flex items-center gap-2 text-primary font-black text-sm uppercase">
+                  <Zap className="w-4 h-4 fill-primary" /> Rápido, simples e lucrativo.
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-card border-2 border-primary/40 p-10 rounded-[2.5rem] shadow-[0_0_50px_rgba(var(--primary-rgb),0.15)] relative">
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-8 py-2 rounded-full font-black text-lg tracking-tighter">
+                INVESTIMENTO ZERO
+              </div>
+              
+              <div className="text-center space-y-6">
+                <p className="text-xl md:text-2xl font-bold leading-tight">
+                  "Você não vai gastar nem um único centavo para começar."
+                </p>
+                <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-full" />
+                <p className="text-lg text-muted-foreground">
+                  Eu desenhei esse treinamento para que você tenha o **custo inicial de R$ 0,00**. 
+                </p>
+                <div className="bg-primary/10 p-6 rounded-2xl border border-primary/20">
+                  <p className="text-primary font-black text-xl md:text-2xl">
+                    MINHA PROMESSA:
+                  </p>
+                  <p className="mt-2 text-foreground font-bold text-lg">
+                    Você só irá investir em ferramentas quando o seu faturamento inicial <span className="underline decoration-primary decoration-4 underline-offset-4">QUADRUPLICAR</span>.
+                  </p>
+                </div>
+                <p className="text-sm italic text-muted-foreground">
+                  O risco é todo meu. O lucro é todo seu.
+                </p>
+                <a 
+                  href="https://promowebcenter.com/botao-site-checkout"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-primary py-4 text-lg font-black uppercase text-primary-foreground transition-transform hover:scale-[1.02]"
+                >
+                  QUERO COMEÇAR SEM GASTAR NADA
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
