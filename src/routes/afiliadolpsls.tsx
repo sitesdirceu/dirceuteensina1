@@ -163,7 +163,7 @@ function AffiliatesPage() {
                   <li>• Qualquer tipo de SPAM</li>
                   <li>• Propaganda enganosa</li>
                   <li>• Práticas que prejudiquem a imagem do produto</li>
-                  <li>• Google Ads para fundo de funil</li>
+                  <li>• Google e Bing Ads para fundo de funil</li>
                 </ul>
               </div>
             </div>
