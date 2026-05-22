@@ -76,7 +76,7 @@ export const Route = createFileRoute("/")({
             "offers": {
               "@type": "Offer",
               "category": "Paid",
-              "price": "97.00",
+              "price": "67.00",
               "priceCurrency": "BRL",
               "url": "https://promowebcenter.com/botao-site-checkout"
             }
