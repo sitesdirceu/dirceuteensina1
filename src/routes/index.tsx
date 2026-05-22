@@ -948,9 +948,6 @@ function LandingPage() {
                   <div className="flex items-center gap-2 text-xs font-bold">
                     <CheckCircle2 className="w-4 h-4" /> ACESSO IMEDIATO
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-bold">
-                    <Users className="w-4 h-4" /> +12 MIL ALUNOS
-                  </div>
                 </div>
               </div>
             </div>
