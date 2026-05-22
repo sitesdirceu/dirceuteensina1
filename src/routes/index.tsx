@@ -204,33 +204,6 @@ const personas = [
   },
 ];
 
-const benefits = [
-  {
-    icon: Home,
-    title: "Liberdade Home Office Real",
-    desc: "Trabalhe do conforto da sua casa, sem trânsito, sem chefe buzinando no seu ouvido e sem horários impostos por terceiros.",
-  },
-  {
-    icon: Laptop,
-    title: "Você é o Único Patrão",
-    desc: "Chega de receber ordens. Você decide quais clientes atender, quanto cobrar e qual será sua rotina diária.",
-  },
-  {
-    icon: Wifi,
-    title: "Trabalhe de Onde Quiser",
-    desc: "Sua única ferramenta é um computador e internet. Pode ser da sua sala, da praia ou viajando o mundo.",
-  },
-  {
-    icon: Calendar,
-    title: "Controle Total do Seu Tempo",
-    desc: "Quer trabalhar de madrugada? Ou prefere as manhãs livres para ficar com seus filhos? A escolha é 100% sua.",
-  },
-  {
-    icon: DollarSign,
-    title: "Faturamento Sem Limites",
-    desc: "Diferente de um emprego comum, aqui não existe teto salarial. Quanto mais você produz com IA, mais você fatura.",
-  },
-];
 
 const faqs = [
   {
