@@ -871,7 +871,7 @@ function LandingPage() {
                       className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
-                  <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que o dinheiro cai do céu?</p>
+                  <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que o dinheiro nasce em árvore?</p>
                 </div>
                 <div className="space-y-4">
                   <div className="aspect-video overflow-hidden rounded-2xl border-4 border-destructive/20 shadow-xl">
