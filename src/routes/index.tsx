@@ -214,19 +214,19 @@ const personas = [
   },
   {
     icon: Laptop,
-    image: personaProfissional,
+    image: personaCriador,
     title: "Freelancers e Designers",
     desc: "Já trabalha na área mas demora dias para entregar uma página? Aprenda a usar a IA para entregar em minutos, cobrar mais caro e atender 10x mais clientes!",
   },
   {
     icon: Home,
-    image: personaEmpreendedor,
+    image: personaDesempregado,
     title: "Quem Busca Transição de Carreira",
     desc: "Sente que seu mercado está saturado ou sem futuro? Migre para a área que mais cresce no mundo e garanta sua segurança financeira com uma habilidade de alta demanda.",
   },
   {
     icon: Zap,
-    image: personaEstudante,
+    image: personaAposentado,
     title: "Jovens em Busca do Primeiro Negócio",
     desc: "Não quer seguir o caminho tradicional de faculdade e emprego fixo? Comece seu próprio negócio digital do zero, com baixo investimento e alto potencial de lucro.",
   },
