@@ -840,31 +840,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* MODULES SECTION */}
-      <section className="border-t border-border py-24 bg-card/30 relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Mapa da Jornada</span>
-            <h2 className="mt-4 text-3xl md:text-5xl font-black">O Que Você Vai <span className="text-primary">Aprender</span></h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Um treinamento completo, direto ao ponto, focado em colocar dinheiro no seu bolso o mais rápido possível.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {modules.map((m, i) => (
-              <div key={m.title} className="bg-background border border-border p-8 rounded-2xl relative group hover:border-primary/50 transition-colors">
-                <div className="absolute top-4 right-4 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">
-                  0{i + 1}
-                </div>
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
-                  <m.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{m.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* BONUSES SECTION */}
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
