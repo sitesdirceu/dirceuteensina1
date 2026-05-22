@@ -891,7 +891,7 @@ function LandingPage() {
                 <p className="text-sm font-bold uppercase tracking-widest text-primary">Hoje por apenas:</p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-2xl font-bold">12x de</span>
-                  <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 6,73</span>
+                  <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 7,00</span>
                 </div>
                 <p className="text-xl font-bold">ou R$ 67,00 à vista</p>
               </div>
