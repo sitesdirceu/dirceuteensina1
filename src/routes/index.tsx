@@ -893,7 +893,7 @@ function LandingPage() {
                   <span className="text-2xl font-bold">12x de</span>
                   <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 7,00</span>
                 </div>
-                <p className="text-xl font-bold">ou R$ 67,00 à vista</p>
+                <p className="text-2xl font-black bg-primary/10 px-4 py-2 rounded-lg inline-block mt-2">ou <span className="text-primary">R$ 67,00</span> à vista</p>
               </div>
 
               <div className="pt-6">
