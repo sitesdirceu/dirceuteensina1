@@ -579,7 +579,7 @@ function LandingPage() {
                 <Sparkles className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold mb-4">IA Cria Tudo</h3>
-              <p className="text-muted-foreground">A inteligência artificial escreve os textos, cria as imagens e estrutura toda a página para você em segundos.</p>
+              <p className="text-muted-foreground">A inteligência artificial escreve os textos, cria as imagens e estrutura toda a página para você em minutos.</p>
             </div>
             <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
@@ -646,7 +646,7 @@ function LandingPage() {
                   <Cpu className="w-5 h-5" /> O Poder da IA
                 </h3>
                 <p className="text-foreground leading-relaxed font-medium">
-                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão trabalhando de forma inteligente e correta.
+                  Hoje, tudo mudou. O que levava dias, a IA faz em **minutos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão trabalhando de forma inteligente e correta.
                 </p>
                 <div className="mt-4 flex items-center gap-2 text-primary font-black text-sm uppercase">
                   <Zap className="w-4 h-4 fill-primary" /> Rápido, simples e lucrativo.
