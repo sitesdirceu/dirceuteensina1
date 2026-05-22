@@ -226,21 +226,32 @@ function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Scarcity Bar */}
+      <div className="bg-primary py-2 text-center text-[10px] font-black uppercase tracking-[0.2em] text-primary-foreground md:text-xs">
+        🔥 ÚLTIMAS VAGAS COM 90% DE DESCONTO - OFERTA TERMINA EM BREVE
+      </div>
+
       {/* Top WhatsApp bar */}
       <div className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2 text-sm font-semibold">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span>DIRCEU TE ENSINA 2.0 - LPSLs</span>
+          <div className="flex items-center gap-2 text-sm font-black tracking-tighter">
+            <span className="bg-primary px-2 py-0.5 text-primary-foreground">DIRCEU</span>
+            <span className="hidden md:inline">TE ENSINA 2.0</span>
           </div>
-          <a
-            href="https://promowebcenter.com/contato/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
-          >
-            <Mail className="h-4 w-4" /> Contato
-          </a>
+          <div className="flex items-center gap-4">
+            <div className="hidden items-center gap-2 text-[10px] font-bold md:flex">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
+              1.240 ALUNOS ONLINE AGORA
+            </div>
+            <a
+              href="https://promowebcenter.com/contato/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
+            >
+              <Mail className="h-4 w-4" /> Suporte
+            </a>
+          </div>
         </div>
       </div>
 
