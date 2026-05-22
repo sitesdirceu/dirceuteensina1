@@ -868,7 +868,7 @@ function LandingPage() {
                     <img 
                       src={preguiçosoHomem} 
                       alt="Homem preguiçoso achando que dinheiro cai do céu" 
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
                     />
                   </div>
                   <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que o dinheiro nasce em árvore?</p>
@@ -878,7 +878,7 @@ function LandingPage() {
                     <img 
                       src={preguiçosaMulher} 
                       alt="Mulher preguiçosa esperando milagre" 
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
                     />
                   </div>
                   <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Acha que vai ganhar sem fazer nada?</p>
