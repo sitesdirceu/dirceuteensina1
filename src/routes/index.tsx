@@ -23,6 +23,7 @@ import {
   Award,
   ChevronDown,
   Sparkles,
+  ArrowRight,
 } from "lucide-react";
 import personaMae from "@/assets/persona-mae.jpg";
 import personaEstudante from "@/assets/persona-estudante.jpg";
@@ -155,28 +156,28 @@ const personas = [
 const benefits = [
   {
     icon: Home,
+    title: "Liberdade Home Office Real",
+    desc: "Trabalhe do conforto da sua casa, sem trânsito, sem chefe buzinando no seu ouvido e sem horários impostos por terceiros.",
+  },
+  {
+    icon: Laptop,
+    title: "Você é o Único Patrão",
+    desc: "Chega de receber ordens. Você decide quais clientes atender, quanto cobrar e qual será sua rotina diária.",
+  },
+  {
+    icon: Wifi,
     title: "Trabalhe de Onde Quiser",
-    desc: "Esqueça o trânsito e o escritório. Trabalhe do conforto da sua casa, da praia ou de qualquer lugar do mundo.",
+    desc: "Sua única ferramenta é um computador e internet. Pode ser da sua sala, da praia ou viajando o mundo.",
   },
   {
     icon: Calendar,
-    title: "Seu Próprio Horário",
-    desc: "Tenha liberdade para definir quando e quanto trabalhar. Aproveite a vida ao máximo com quem você ama!",
+    title: "Controle Total do Seu Tempo",
+    desc: "Quer trabalhar de madrugada? Ou prefere as manhãs livres para ficar com seus filhos? A escolha é 100% sua.",
   },
   {
     icon: DollarSign,
-    title: "Renda Ilimitada",
-    desc: "Sem teto de ganhos. Quanto mais você se dedica, mais você pode ganhar. O limite é você quem define.",
-  },
-  {
-    icon: BookOpen,
-    title: "Aprendizado Contínuo",
-    desc: "Acesso a técnicas atualizadas e estratégias que funcionam no mercado digital atual, sempre em evolução.",
-  },
-  {
-    icon: Award,
-    title: "Método Comprovado",
-    desc: "Técnicas testadas e aprovadas desde 2015. Siga um caminho já traçado para o sucesso financeiro.",
+    title: "Faturamento Sem Limites",
+    desc: "Diferente de um emprego comum, aqui não existe teto salarial. Quanto mais você produz com IA, mais você fatura.",
   },
 ];
 
@@ -312,15 +313,23 @@ function LandingPage() {
               />
             </div>
 
-            <a
-              href="https://promowebcenter.com/botao-site-checkout"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-base font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
-              style={{ background: "var(--gradient-primary)" }}
-            >
-              Quero Começar Agora
-            </a>
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <a
+                href="https://promowebcenter.com/botao-site-checkout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl px-10 py-5 text-lg font-black uppercase tracking-wider text-primary-foreground shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] transition-all hover:scale-[1.05] hover:shadow-[0_0_35px_rgba(var(--primary-rgb),0.6)]"
+                style={{ background: "var(--gradient-primary)" }}
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Quero Minha Liberdade Agora <ArrowRight className="h-6 w-6 animate-bounce-x" />
+                </span>
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+              </a>
+              <p className="flex items-center gap-2 text-sm font-bold text-primary animate-pulse">
+                <Users className="h-4 w-4" /> 127 pessoas entraram nas últimas 24h
+              </p>
+            </div>
 
             <p className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">
               Método comprovado desde 2015
@@ -429,12 +438,12 @@ function LandingPage() {
             Resultados Reais
           </span>
           <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold md:text-4xl">
-            Meus Resultados Trabalhando do{" "}
+            Meus Resultados Trabalhando no{" "}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: "var(--gradient-primary)" }}
             >
-              Canto do Meu Quarto
+              Conforto da Minha Casa
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -446,7 +455,7 @@ function LandingPage() {
             <iframe
               className="h-full w-full"
               src="https://www.youtube.com/embed/Z54J_yYQI4A?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0"
-              title="Meus Resultados Trabalhando do Canto do Meu Quarto"
+              title="Meus Resultados Trabalhando em Casa"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
@@ -471,6 +480,76 @@ function LandingPage() {
                 <div className="text-xs text-muted-foreground">{s.l}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOME OFFICE FREEDOM SECTION */}
+      <section className="border-t border-border bg-gradient-to-b from-background to-primary/5 py-24 overflow-hidden relative">
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10" />
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2 order-2 md:order-1">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary-foreground rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div className="relative bg-card border border-border p-8 rounded-2xl shadow-2xl">
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 bg-red-500/10 p-2 rounded-lg">
+                        <XCircle className="w-5 h-5 text-red-500" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg text-muted-foreground line-through">A Vida que Te Ensinaram</h4>
+                        <p className="text-sm text-muted-foreground italic">"Acorde cedo, pegue trânsito, obedeça ordens, receba um salário que mal paga as contas e espere pelo final de semana."</p>
+                      </div>
+                    </div>
+                    
+                    <div className="h-px bg-border w-full" />
+
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 bg-primary/10 p-2 rounded-lg">
+                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-black text-xl text-primary">A Liberdade que Eu Vou Te Entregar</h4>
+                        <p className="text-lg font-medium">Trabalhe da sua casa, no seu horário, sendo o seu próprio chefe e faturando alto com o poder da Inteligência Artificial.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="md:w-1/2 order-1 md:order-2">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Liberdade Geográfica e Financeira</span>
+              <h2 className="mt-4 text-3xl md:text-5xl font-black leading-tight">
+                Você Decide Se <span className="text-primary">Trabalha ou Não</span> Hoje
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Chega de viver sob as ordens de uma empresa que não te valoriza. No meu treinamento, eu te mostro como construir o seu **próprio império home office**.
+              </p>
+              <ul className="mt-8 space-y-4">
+                {[
+                  "Esqueça o despertador e o trânsito estressante",
+                  "Trabalhe de pijama ou da sua cafeteria favorita",
+                  "Tenha tempo real para ver seus filhos crescerem",
+                  "O seu lucro depende apenas do seu esforço, não de um RH"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 font-semibold">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10">
+                <a 
+                  href="#cta"
+                  className="inline-flex items-center gap-2 font-bold text-primary hover:gap-3 transition-all"
+                >
+                  EU QUERO ESSA LIBERDADE <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
