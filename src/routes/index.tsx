@@ -438,12 +438,12 @@ function LandingPage() {
             Resultados Reais
           </span>
           <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold md:text-4xl">
-            Meus Resultados Trabalhando do{" "}
+            Meus Resultados Trabalhando no{" "}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: "var(--gradient-primary)" }}
             >
-              Canto do Meu Quarto
+              Conforto da Minha Casa
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
