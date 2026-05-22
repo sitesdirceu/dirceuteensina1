@@ -39,8 +39,8 @@ import personaEmpreendedor from "@/assets/persona-empreendedor.jpg";
 import personaAposentado from "@/assets/persona-aposentado.jpg";
 import dirceuHistoria from "@/assets/dirceu-historia.jpg";
 import dirceuFoto from "@/assets/dirceu-te-ensina.png";
-import preguiçosoHomem from "@/assets/preguicoso-homem.jpg";
-import preguiçosaMulher from "@/assets/preguicoso-mulher.jpg";
+import preguiçosoHomem from "@/assets/preguicoso-homem.png";
+import preguiçosaMulher from "@/assets/preguicoso-mulher.png";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
