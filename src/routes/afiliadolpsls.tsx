@@ -64,11 +64,12 @@ function AffiliatesPage() {
               <Rocket className="h-3.5 w-3.5" />
               Oportunidade para Afiliados
             </div>
-            <h1 className="text-4xl font-extrabold leading-tight md:text-5xl mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
-                🚀 GANHE DINHEIRO DIVULGANDO UM TREINAMENTO FÁCIL DE VENDER!
-              </span>
+            <h1 className="text-4xl font-extrabold leading-tight md:text-5xl mb-6 uppercase">
+              🚀 GANHE DINHEIRO DIVULGANDO UM TREINAMENTO FÁCIL DE VENDER!
             </h1>
+            <div className="mb-6 inline-block rounded-lg bg-red-600 px-6 py-2 text-lg font-black uppercase text-white shadow-lg animate-pulse">
+              ⚠️ AFILIAÇÃO SOMENTE PARA ALUNOS
+            </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
               O treinamento “Dirceu Te Ensina 2.0 - LPSLs” foi criado para pessoas que querem aprender a faturar online criando Landing Pages com Inteligência Artificial, mesmo começando do zero.
             </p>
@@ -180,6 +181,9 @@ function AffiliatesPage() {
             <h2 className="text-2xl md:text-3xl font-black mb-4">
               QUEREMOS AFILIADOS SÉRIOS E ÉTICOS
             </h2>
+            <div className="mb-4 text-xl font-black bg-white text-red-600 py-1 px-4 inline-block rounded">
+              AFILIAÇÃO SOMENTE PARA ALUNOS
+            </div>
             <p className="text-primary-foreground/90 max-w-xl mx-auto mb-8 font-medium">
               Focados em ganhar dinheiro de forma correta e profissional. Quem trabalha certo, vende muito. 🔥
             </p>
