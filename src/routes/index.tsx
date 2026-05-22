@@ -593,7 +593,7 @@ function LandingPage() {
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold mb-4">Rapidez Absurda</h3>
-              <p className="text-muted-foreground">Como o processo é automatizado com meu método, você consegue fechar um cliente e entregar o serviço no mesmo dia!</p>
+              <p className="text-muted-foreground">O processo é simples e qualquer pessoa consegue fazer. Aplicando o método e trabalhando do jeito certo, você consegue fechar um cliente e entregar no mesmo dia!</p>
             </div>
           </div>
 
