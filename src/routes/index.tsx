@@ -455,7 +455,7 @@ function LandingPage() {
             <iframe
               className="h-full w-full"
               src="https://www.youtube.com/embed/Z54J_yYQI4A?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0"
-              title="Meus Resultados Trabalhando do Canto do Meu Quarto"
+              title="Meus Resultados Trabalhando em Casa"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
