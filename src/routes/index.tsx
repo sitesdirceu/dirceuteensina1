@@ -187,7 +187,7 @@ const faqs = [
   },
   {
     q: "Quanto tempo leva para ver os primeiros resultados?",
-    a: "Depende da sua dedicação. Alunos que aplicam o método consistentemente costumam ver os primeiros resultados entre 3 e 10 dias, mas é claro que vai depender muito do seu esforço e dedicação.",
+    a: "Depende da sua dedicação. Alunos que aplicam o método consistentemente costumam ver os primeiros resultados em apenas 3 dias, mas é claro que vai depender muito do seu esforço e dedicação.",
   },
   {
     q: "Preciso investir dinheiro além do curso?",
@@ -275,6 +275,17 @@ function LandingPage() {
               </span>
               . Se eu consigo, você também consegue!
             </p>
+
+            <div className="mt-8 transform transition-all hover:scale-105">
+              <div className="relative inline-block">
+                <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 opacity-75 blur animate-pulse"></div>
+                <div className="relative rounded-lg bg-background px-6 py-4 border-2 border-primary/50">
+                  <h2 className="text-2xl md:text-4xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 animate-shimmer">
+                    COMECE A FATURAR SEUS PRIMEIROS REAIS EM 3 DIAS
+                  </h2>
+                </div>
+              </div>
+            </div>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               {[
@@ -460,6 +471,58 @@ function LandingPage() {
                 <div className="text-xs text-muted-foreground">{s.l}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT'S POSSIBLE */}
+      <section className="border-t border-border bg-primary/5 py-20 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-30" />
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+              <Sparkles className="h-3.5 w-3.5" /> Como isso é possível?
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">
+              O Atalho Para <span className="text-primary">Faturar Rápido</span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Você não precisa ser um expert em design ou programação. O segredo está em usar a <span className="font-bold text-foreground">Inteligência Artificial</span> a seu favor para entregar em minutos o que levava dias.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">IA Cria Tudo</h3>
+              <p className="text-muted-foreground">A inteligência artificial escreve os textos, cria as imagens e estrutura toda a página para você em segundos.</p>
+            </div>
+            <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                <Target className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Demanda Infinita</h3>
+              <p className="text-muted-foreground">Todo negócio local (dentistas, advogados, oficinas) precisa de uma Landing Page para vender mais. Eles pagam bem por isso!</p>
+            </div>
+            <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                <Clock className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Rapidez Absurda</h3>
+              <p className="text-muted-foreground">Como o processo é automatizado com meu método, você consegue fechar um cliente e entregar o serviço no mesmo dia!</p>
+            </div>
+          </div>
+
+          <div className="mt-16 bg-card border-2 border-primary/20 p-8 rounded-3xl text-center max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4">É por isso que você pode</h3>
+            <div className="inline-block px-6 py-3 bg-primary text-primary-foreground font-black text-2xl md:text-3xl rounded-xl skew-x-[-2deg] hover:skew-x-0 transition-transform cursor-default">
+              FATURAR SEUS PRIMEIROS REAIS EM 3 DIAS
+            </div>
+            <p className="mt-6 text-muted-foreground">
+              Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem precisar de anos de estudo. Eu te dou o passo a passo exato.
+            </p>
           </div>
         </div>
       </section>
@@ -667,7 +730,7 @@ function LandingPage() {
             className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
             style={{ background: "var(--gradient-primary)" }}
           >
-            SIM! EU QUERO COMEÇAR AGORA
+            SIM! EU QUERO COMEÇAR A FATURAR EM 3 DIAS
           </a>
           <p className="mt-4 text-sm text-muted-foreground">
             Clique no botão e comece sua jornada de transformação
