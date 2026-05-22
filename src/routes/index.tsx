@@ -93,6 +93,52 @@ const stats = [
   { value: "Suporte", label: "Direto Comigo" },
 ];
 
+const modules = [
+  {
+    title: "Módulo 1: Mentalidade e Liberdade",
+    desc: "Prepare sua mente para sair da CLT e assumir o controle total da sua vida financeira.",
+    icon: Target,
+  },
+  {
+    title: "Módulo 2: O Poder da IA na Prática",
+    desc: "As ferramentas secretas que eu uso para criar landing pages profissionais em minutos.",
+    icon: Cpu,
+  },
+  {
+    title: "Módulo 3: Criando Landing Pages que Vendem",
+    desc: "Clique a clique, sem precisar de código, criando páginas de alto padrão.",
+    icon: Laptop,
+  },
+  {
+    title: "Módulo 4: Prospecção de Clientes Reais",
+    desc: "Onde encontrar empresas que pagam bem e como fechar contratos sem parecer um vendedor.",
+    icon: MapPin,
+  },
+  {
+    title: "Módulo 5: Escala e Quadruplicação",
+    desc: "Como gerenciar seu novo negócio home office e escalar seus ganhos mensais.",
+    icon: Zap,
+  },
+];
+
+const bonuses = [
+  {
+    title: "Script de Abordagem Irresistível",
+    desc: "O que falar para o cliente para fechar a venda rapidamente.",
+    value: "R$ 197,00",
+  },
+  {
+    title: "Meus Modelos Prontos",
+    desc: "Páginas que eu já usei para faturar alto, prontas para você usar.",
+    value: "R$ 497,00",
+  },
+  {
+    title: "Suporte VIP Direto Comigo",
+    desc: "Acesso ao meu suporte pessoal para tirar todas as suas dúvidas.",
+    value: "INESTIMÁVEL",
+  },
+];
+
 const beforeItems = [
   "Trabalhando 8+ horas por dia para os outros",
   "Chefe mandando em cada passo",
@@ -158,33 +204,6 @@ const personas = [
   },
 ];
 
-const benefits = [
-  {
-    icon: Home,
-    title: "Liberdade Home Office Real",
-    desc: "Trabalhe do conforto da sua casa, sem trânsito, sem chefe buzinando no seu ouvido e sem horários impostos por terceiros.",
-  },
-  {
-    icon: Laptop,
-    title: "Você é o Único Patrão",
-    desc: "Chega de receber ordens. Você decide quais clientes atender, quanto cobrar e qual será sua rotina diária.",
-  },
-  {
-    icon: Wifi,
-    title: "Trabalhe de Onde Quiser",
-    desc: "Sua única ferramenta é um computador e internet. Pode ser da sua sala, da praia ou viajando o mundo.",
-  },
-  {
-    icon: Calendar,
-    title: "Controle Total do Seu Tempo",
-    desc: "Quer trabalhar de madrugada? Ou prefere as manhãs livres para ficar com seus filhos? A escolha é 100% sua.",
-  },
-  {
-    icon: DollarSign,
-    title: "Faturamento Sem Limites",
-    desc: "Diferente de um emprego comum, aqui não existe teto salarial. Quanto mais você produz com IA, mais você fatura.",
-  },
-];
 
 const faqs = [
   {
@@ -226,21 +245,32 @@ function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Scarcity Bar */}
+      <div className="bg-primary py-2 text-center text-[10px] font-black uppercase tracking-[0.2em] text-primary-foreground md:text-xs">
+        🔥 ÚLTIMAS VAGAS COM 90% DE DESCONTO - OFERTA TERMINA EM BREVE
+      </div>
+
       {/* Top WhatsApp bar */}
       <div className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2 text-sm font-semibold">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span>DIRCEU TE ENSINA 2.0 - LPSLs</span>
+          <div className="flex items-center gap-2 text-sm font-black tracking-tighter">
+            <span className="bg-primary px-2 py-0.5 text-primary-foreground">DIRCEU</span>
+            <span className="hidden md:inline">TE ENSINA 2.0</span>
           </div>
-          <a
-            href="https://promowebcenter.com/contato/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition hover:bg-primary/20"
-          >
-            <Mail className="h-4 w-4" /> Contato
-          </a>
+          <div className="flex items-center gap-4">
+            <div className="hidden items-center gap-2 text-[10px] font-bold md:flex">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
+              1.240 ALUNOS ONLINE AGORA
+            </div>
+            <a
+              href="https://promowebcenter.com/contato/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-black uppercase text-primary-foreground shadow-lg shadow-primary/20 transition hover:scale-105"
+            >
+              <Mail className="h-4 w-4" /> Suporte VIP
+            </a>
+          </div>
         </div>
       </div>
 
@@ -798,34 +828,136 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="border-t border-border py-20">
+      {/* MODULES SECTION */}
+      <section className="border-t border-border py-24 bg-card/30 relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary">
-              Benefícios
-            </span>
-            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
-              Vantagens Exclusivas
-            </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-              Descubra por que dezenas de pessoas já estão transformando suas vidas
-            </p>
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Mapa da Jornada</span>
+            <h2 className="mt-4 text-3xl md:text-5xl font-black">O Que Você Vai <span className="text-primary">Aprender</span></h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Um treinamento completo, direto ao ponto, focado em colocar dinheiro no seu bolso o mais rápido possível.</p>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-6xl gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {benefits.map((b) => (
-              <div
-                key={b.title}
-                className="rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:border-primary/50"
-              >
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                  <b.icon className="h-5 w-5" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {modules.map((m, i) => (
+              <div key={m.title} className="bg-background border border-border p-8 rounded-2xl relative group hover:border-primary/50 transition-colors">
+                <div className="absolute top-4 right-4 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">
+                  0{i + 1}
                 </div>
-                <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{b.desc}</p>
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                  <m.icon className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">{m.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BONUSES SECTION */}
+      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_60%)]" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4">Presentes Exclusivos</span>
+            <h2 className="text-3xl md:text-5xl font-black">Bônus que Aceleram <br className="hidden md:block" /> Seu <span className="underline decoration-white/40">Resultado</span></h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {bonuses.map((b) => (
+              <div key={b.title} className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-3xl text-center flex flex-col items-center">
+                <div className="text-xs font-bold uppercase tracking-widest opacity-80 mb-2">Valor original: {b.value}</div>
+                <h3 className="text-xl font-black mb-4">{b.title}</h3>
+                <p className="text-sm opacity-90 leading-relaxed mb-6 flex-grow">{b.desc}</p>
+                <div className="text-white font-black text-sm px-4 py-2 bg-white/20 rounded-lg">GRÁTIS HOJE</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GUARANTEE SECTION */}
+      <section className="py-24 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-card border-2 border-primary/20 rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
+            <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 relative">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse" />
+              <Shield className="w-full h-full text-primary relative z-10" strokeWidth={1} />
+              <div className="absolute inset-0 flex items-center justify-center text-primary font-black text-2xl md:text-3xl">7</div>
+            </div>
+            <div>
+              <h2 className="text-2xl md:text-4xl font-black mb-4">Risco Zero: <span className="text-primary">Garantia Blindada</span> de 7 Dias</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Eu confio tanto no meu método que eu tiro todo o risco das suas costas. Entre no treinamento, assista as aulas, aplique o método. Se em até 7 dias você não estiver satisfeito, basta me enviar um e-mail e eu devolvo <span className="font-bold text-foreground">100% do seu dinheiro</span>. Sem perguntas, sem burocracia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THE OFFER SECTION (PRICE ANCHOR) */}
+      <section className="py-24 bg-gradient-to-b from-card/50 to-background border-t border-border" id="oferta">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-background border-2 border-primary p-8 md:p-12 rounded-[2.5rem] shadow-[0_0_80px_rgba(var(--primary-rgb),0.2)] relative">
+            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-10 py-3 rounded-full font-black text-xl animate-bounce shadow-xl">
+              OFERTA EXCLUSIVA
+            </div>
+
+            <div className="text-center space-y-8">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tighter">FAÇA SUA MATRÍCULA AGORA</h2>
+              
+              <div className="space-y-4 max-w-md mx-auto">
+                <div className="flex justify-between items-center text-muted-foreground line-through decoration-destructive decoration-2">
+                  <span>Treinamento Completo:</span>
+                  <span>R$ 497,00</span>
+                </div>
+                <div className="flex justify-between items-center text-muted-foreground line-through decoration-destructive decoration-2">
+                  <span>Todos os Bônus:</span>
+                  <span>R$ 791,00</span>
+                </div>
+                <div className="h-px bg-border w-full" />
+                <div className="flex justify-between items-center text-xl font-bold">
+                  <span>VALOR TOTAL:</span>
+                  <span className="text-destructive">R$ 1.288,00</span>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-sm font-bold uppercase tracking-widest text-primary">Apenas hoje por apenas:</p>
+                <div className="flex items-center justify-center gap-2">
+                  <span className="text-2xl font-bold">12x de</span>
+                  <span className="text-6xl md:text-8xl font-black text-primary tracking-tighter">R$ 9,74</span>
+                </div>
+                <p className="text-xl font-bold">ou R$ 97,00 à vista</p>
+              </div>
+
+              <div className="pt-6">
+                <a
+                  href="https://promowebcenter.com/botao-site-checkout"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl py-6 text-xl md:text-2xl font-black uppercase tracking-wider text-primary-foreground shadow-[0_20px_40px_rgba(var(--primary-rgb),0.3)] transition-all hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(var(--primary-rgb),0.4)]"
+                  style={{ background: "var(--gradient-primary)" }}
+                >
+                  <span className="relative z-10 flex items-center gap-3">
+                    SIM! QUERO MINHA VAGA AGORA <ArrowRight className="h-7 w-7" />
+                  </span>
+                  <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+                </a>
+                
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-6 opacity-60">
+                  <div className="flex items-center gap-2 text-xs font-bold">
+                    <Shield className="w-4 h-4" /> COMPRA 100% SEGURA
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-bold">
+                    <CheckCircle2 className="w-4 h-4" /> ACESSO IMEDIATO
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-bold">
+                    <Users className="w-4 h-4" /> +12 MIL ALUNOS
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -887,23 +1019,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section id="cta" className="border-t border-border py-20">
-        <div className="container mx-auto px-4 text-center">
-          <a
-            href="https://promowebcenter.com/botao-site-checkout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-2xl px-10 py-5 text-lg font-extrabold uppercase tracking-wide text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02]"
-            style={{ background: "var(--gradient-primary)" }}
-          >
-            SIM! EU QUERO COMEÇAR A FATURAR EM 3 DIAS
-          </a>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Clique no botão e comece sua jornada de transformação
-          </p>
-        </div>
-      </section>
 
       {/* FOOTER */}
       <footer
