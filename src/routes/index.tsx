@@ -593,7 +593,7 @@ function LandingPage() {
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold mb-4">Rapidez Absurda</h3>
-              <p className="text-muted-foreground">Como o processo é automatizado com meu método, você consegue fechar um cliente e entregar o serviço no mesmo dia!</p>
+              <p className="text-muted-foreground">O processo é simples e qualquer pessoa consegue fazer. Aplicando o método e trabalhando do jeito certo, você consegue fechar um cliente e entregar no mesmo dia!</p>
             </div>
           </div>
 
@@ -603,7 +603,7 @@ function LandingPage() {
               FATURAR SEUS PRIMEIROS REAIS EM 3 DIAS
             </div>
             <p className="mt-6 text-muted-foreground">
-              Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem precisar de anos de estudo. Eu te dou o passo a passo exato.
+              Sem precisar gastar com ferramentas caras, sem precisar de equipe e sem anos de estudo. Você só precisa trabalhar da forma correta para ter resultados reais.
             </p>
           </div>
         </div>
@@ -646,7 +646,7 @@ function LandingPage() {
                   <Cpu className="w-5 h-5" /> O Poder da IA
                 </h3>
                 <p className="text-foreground leading-relaxed font-medium">
-                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão com poucos cliques.
+                  Hoje, tudo mudou. O que levava dias, a IA faz em **segundos**. Com o meu método, qualquer pessoa com vontade de mudar sua realidade consegue criar Landing Pages de alto padrão trabalhando de forma inteligente e correta.
                 </p>
                 <div className="mt-4 flex items-center gap-2 text-primary font-black text-sm uppercase">
                   <Zap className="w-4 h-4 fill-primary" /> Rápido, simples e lucrativo.
