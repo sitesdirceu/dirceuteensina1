@@ -24,6 +24,9 @@ import {
   ChevronDown,
   Sparkles,
   ArrowRight,
+  Zap,
+  Cpu,
+  Layers,
 } from "lucide-react";
 import personaMae from "@/assets/persona-mae.jpg";
 import personaEstudante from "@/assets/persona-estudante.jpg";
