@@ -1015,6 +1015,8 @@ function LandingPage() {
               </a>
               <span>|</span>
               <a href="#" className="hover:text-primary">Política de Privacidade</a>
+              <span>|</span>
+              <a href="/afiliadolpsls" className="hover:text-primary">Afiliados</a>
             </div>
             <p>© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
           </div>
