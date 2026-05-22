@@ -276,6 +276,17 @@ function LandingPage() {
               . Se eu consigo, você também consegue!
             </p>
 
+            <div className="mt-8 transform transition-all hover:scale-105">
+              <div className="relative inline-block">
+                <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 opacity-75 blur animate-pulse"></div>
+                <div className="relative rounded-lg bg-background px-6 py-4 border-2 border-primary/50">
+                  <h2 className="text-2xl md:text-4xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 animate-shimmer">
+                    COMECE A FATURAR SEUS PRIMEIROS REAIS EM 3 DIAS
+                  </h2>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               {[
                 { icon: Laptop, label: "Notebook, computador e celular" },
