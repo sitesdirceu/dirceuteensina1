@@ -941,24 +941,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* GUARANTEE SECTION */}
-      <section className="py-24 border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-card border-2 border-primary/20 rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
-            <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse" />
-              <Shield className="w-full h-full text-primary relative z-10" strokeWidth={1} />
-              <div className="absolute inset-0 flex items-center justify-center text-primary font-black text-2xl md:text-3xl">7</div>
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-4xl font-black mb-4">Risco Zero: <span className="text-primary">Garantia Blindada</span> de 7 Dias</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Eu confio tanto no meu método que eu tiro todo o risco das suas costas. Entre no treinamento, assista as aulas, aplique o método. Se em até 7 dias você não estiver satisfeito, basta me enviar um e-mail e eu devolvo <span className="font-bold text-foreground">100% do seu dinheiro</span>. Sem perguntas, sem burocracia.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* THE OFFER SECTION (PRICE ANCHOR) */}
       <section className="py-24 bg-gradient-to-b from-card/50 to-background border-t border-border" id="oferta">
