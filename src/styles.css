@@ -175,3 +175,18 @@
 .animate-bounce-x {
   animation: bounce-x 1s ease-in-out infinite;
 }
+
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
