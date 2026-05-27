@@ -820,7 +820,7 @@ function LandingPage() {
             
             <div className="relative z-10 space-y-8">
               <h2 className="text-2xl md:text-3xl font-black leading-tight text-foreground">
-                “Ah Dirceu, você trabalha desde 2011 pela internet e ainda não ficou rico?”
+                “Ah Dirceu, você trabalha desde 2015 pela internet e ainda não ficou rico?”
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
