@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TestImageRouteImport } from './routes/test-image'
 import { Route as AfiliadolpslsRouteImport } from './routes/afiliadolpsls'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TestImageRoute = TestImageRouteImport.update({
+  id: '/test-image',
+  path: '/test-image',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AfiliadolpslsRoute = AfiliadolpslsRouteImport.update({
   id: '/afiliadolpsls',
   path: '/afiliadolpsls',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/afiliadolpsls': typeof AfiliadolpslsRoute
+  '/test-image': typeof TestImageRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/afiliadolpsls': typeof AfiliadolpslsRoute
+  '/test-image': typeof TestImageRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/afiliadolpsls': typeof AfiliadolpslsRoute
+  '/test-image': typeof TestImageRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/afiliadolpsls'
+  fullPaths: '/' | '/afiliadolpsls' | '/test-image'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/afiliadolpsls'
-  id: '__root__' | '/' | '/afiliadolpsls'
+  to: '/' | '/afiliadolpsls' | '/test-image'
+  id: '__root__' | '/' | '/afiliadolpsls' | '/test-image'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AfiliadolpslsRoute: typeof AfiliadolpslsRoute
+  TestImageRoute: typeof TestImageRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/test-image': {
+      id: '/test-image'
+      path: '/test-image'
+      fullPath: '/test-image'
+      preLoaderRoute: typeof TestImageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/afiliadolpsls': {
       id: '/afiliadolpsls'
       path: '/afiliadolpsls'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AfiliadolpslsRoute: AfiliadolpslsRoute,
+  TestImageRoute: TestImageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
