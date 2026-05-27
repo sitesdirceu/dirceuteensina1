@@ -922,6 +922,37 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* CALL TO ACTION SECTION */}
+      <section className="py-20 bg-primary/5 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
+              Por isso eu criei o treinamento <br />
+              <span 
+                className="bg-clip-text text-transparent px-2"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                "DIRCEU TE ENSINA 2.0 - LPSLs"
+              </span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium mb-10 leading-relaxed">
+              Para te ajudar a fazer dinheiro de uma forma que <span className="text-foreground font-bold underline decoration-primary underline-offset-4">pouquíssimas pessoas</span> sabem fazer.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a 
+                href="#pricing" 
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-primary px-8 py-4 text-lg font-black text-primary-foreground transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] active:scale-95"
+              >
+                <span>QUERO COMEÇAR AGORA</span>
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* ÁREA DE MEMBROS PREVIEW */}
       <section className="border-t border-border bg-gradient-to-b from-card/30 to-background py-24 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
