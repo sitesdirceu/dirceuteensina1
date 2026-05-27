@@ -941,7 +941,7 @@ function LandingPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href="#pricing" 
+                href="#oferta" 
                 className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-primary px-8 py-4 text-lg font-black text-primary-foreground transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] active:scale-95"
               >
                 <span>QUERO COMEÇAR AGORA</span>
