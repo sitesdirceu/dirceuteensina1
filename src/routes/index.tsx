@@ -43,6 +43,7 @@ import dirceuFoto from "@/assets/dirceu-te-ensina.png";
 import preguiçosoHomem from "@/assets/preguicoso-homem.png";
 import preguiçosaMulher from "@/assets/preguicoso-mulher.png";
 import dirceuFamilia from "@/assets/dirceu-familia.jpg";
+import logoLpsls from "@/assets/logo-lpsls.png";
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -987,6 +988,13 @@ function LandingPage() {
                 "DIRCEU TE ENSINA 2.0 - LPSLs"
               </span>
             </h2>
+            <div className="flex justify-center mb-8">
+              <img
+                src={logoLpsls}
+                alt="Logo Dirceu Te Ensina 2.0 - LPSLs"
+                className="w-64 md:w-80 h-auto drop-shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+              />
+            </div>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium mb-10 leading-relaxed">
               Para te ajudar a fazer dinheiro de uma forma que <span className="text-foreground font-bold underline decoration-primary underline-offset-4">pouquíssimas pessoas</span> sabem fazer.
             </p>
