@@ -190,3 +190,7 @@
 .animate-pulse-soft {
   animation: pulse-soft 3s ease-in-out infinite;
 }
+
+#lovable-badge {
+  display: none !important;
+}
