@@ -922,6 +922,58 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* EXPERIENCE / TRAJECTORY SECTION */}
+      <section className="border-t border-border bg-gradient-to-b from-background to-card/20 py-24 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+              <Award className="h-3.5 w-3.5" /> Minha Trajetória
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">
+              Eu já fiz dinheiro de{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                várias formas desde 2015
+              </span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
+              Antes de chegar ao modelo simplificado de Landing Pages com IA, eu trilhei um longo caminho e validei diversas estratégias no mercado digital.
+            </p>
+          </div>
+
+          <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
+            {[
+              { label: "Dropshipping", icon: Laptop },
+              { label: "Afiliados", icon: Users },
+              { label: "Canal Dark", icon: Youtube },
+              { label: "Mentorias", icon: GraduationCap },
+              { label: "Cursos Online", icon: Play },
+              { label: "Infoprodutor", icon: Zap },
+              { label: "Coprodutor", icon: Target },
+              { label: "Estratégia Digital", icon: Cpu }
+            ].map((item, i) => (
+              <div 
+                key={i} 
+                className="group flex flex-col items-center justify-center rounded-2xl border border-border bg-card/50 p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]"
+              >
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <item.icon className="h-7 w-7" />
+                </div>
+                <span className="text-center font-bold text-foreground md:text-lg">{item.label}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-16 text-center">
+            <p className="text-lg text-muted-foreground italic">
+              "Toda essa experiência me permitiu filtrar o que realmente funciona e criar o método mais simples para quem está começando hoje."
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CALL TO ACTION SECTION */}
       <section className="py-20 bg-primary/5 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
