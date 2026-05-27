@@ -811,6 +811,95 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* DIRCEU'S PERSONAL MESSAGE SECTION */}
+      <section className="border-t border-border bg-card/10 py-24">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="bg-background border border-border p-8 md:p-12 rounded-[2rem] shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+            
+            <div className="relative z-10 space-y-8">
+              <h2 className="text-2xl md:text-3xl font-black leading-tight text-foreground">
+                “Ah Dirceu, você trabalha desde 2011 pela internet e ainda não ficou rico?”
+              </h2>
+              
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>Muita gente me pergunta isso.</p>
+                <p>E eu vou responder da forma mais sincera possível.</p>
+
+                <p>
+                  A maioria das pessoas que “ficam milionárias” na internet — não todas — enriquecem principalmente vendendo o próprio curso, vendendo sonho e promessa.
+                </p>
+                
+                <div className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
+                  <p className="font-bold text-foreground">
+                    Será que os grandes players realmente fizeram dinheiro fazendo aquilo que ensinam?
+                  </p>
+                  <p className="mt-2 italic">
+                    Ou será que a maior fortuna veio justamente de vender cursos ensinando outras pessoas a tentar?
+                  </p>
+                </div>
+
+                <p>Pergunta pra eles. Duvido que vão te responder com total transparência.</p>
+
+                <p>
+                  E outra coisa que quase ninguém fala: <span className="font-bold text-foreground underline decoration-primary/30">riqueza é relativa.</span>
+                </p>
+
+                <p>
+                  Pra muita gente, riqueza é ostentar carro de luxo alugado, relógio caro e vídeos dentro de mansões.
+                  <br />Pra mim, riqueza é diferente.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
+                  {[
+                    "Ter minha família comigo",
+                    "Minha casa quitada",
+                    "Meu carro quitado",
+                    "Fazer compras sem preocupação",
+                    "Viajar nos finais de semana",
+                    "Acampar com a família",
+                    "Paz na consciência e dormir tranquilo"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                      <span className="font-semibold text-foreground/80">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="font-black text-foreground text-xl">Isso é riqueza de verdade pra mim.</p>
+
+                <p>
+                  Eu também não preciso enganar ninguém com promessas absurdas de “dinheiro fácil”, dizendo que você vai ganhar 100 mil reais por mês apertando alguns botões e sem praticamente trabalhar.
+                </p>
+
+                <p>E o mais triste é que ainda tem muita gente que acredita nisso.</p>
+
+                <p className="bg-foreground text-background p-6 rounded-xl font-bold italic">
+                  "A verdade é simples: não existe dinheiro fácil. Existe trabalho. Existe aprendizado. Existe estratégia. Existe consistência."
+                </p>
+
+                <p>
+                  A internet pode sim mudar vidas. Mas não através de mágica.
+                </p>
+
+                <p>
+                  E se um dia eu precisar mentir, manipular ou brincar com a esperança das pessoas pra ganhar dinheiro… eu prefiro ficar fora disso e manter minha consciência tranquila.
+                </p>
+
+                <p>
+                  Então, se você já percebeu que não existe fórmula mágica, mas que existem formas reais e honestas de ganhar dinheiro na internet, eu te convido a me acompanhar.
+                </p>
+
+                <p className="text-foreground font-black text-xl">
+                  Eu vou te ensinar tudo que aprendi nesses anos trabalhando online — de forma transparente, prática e sem promessas falsas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PERSONAS */}
       <section className="border-t border-border bg-card/30 py-20">
         <div className="container mx-auto px-4">
