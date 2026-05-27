@@ -286,10 +286,6 @@ function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Scarcity Bar */}
-      <div className="bg-primary py-2 text-center text-[10px] font-black uppercase tracking-[0.2em] text-primary-foreground md:text-xs">
-        🔥 ÚLTIMAS VAGAS COM DESCONTO ESPECIAL - OFERTA TERMINA EM BREVE
-      </div>
 
       {/* Top WhatsApp bar */}
       <div className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
