@@ -966,9 +966,12 @@ function LandingPage() {
             ))}
           </div>
           
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center space-y-4">
             <p className="text-lg text-muted-foreground italic">
               "Toda essa experiência me permitiu filtrar o que realmente funciona e criar o método mais simples para quem está começando hoje."
+            </p>
+            <p className="text-xl text-foreground font-medium max-w-3xl mx-auto">
+              Criar Landing Pages para serviços locais é apenas <span className="text-primary font-bold">mais uma fonte de renda</span> que aprendi como fazer ao longo desses anos, e a boa notícia é: <span className="underline decoration-primary decoration-2 underline-offset-4 font-black">você também vai conseguir!</span>
             </p>
           </div>
         </div>
