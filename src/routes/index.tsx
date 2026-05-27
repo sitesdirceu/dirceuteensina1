@@ -856,6 +856,7 @@ function LandingPage() {
                     "Minha casa quitada",
                     "Meu carro quitado",
                     "Fazer compras sem preocupação",
+                    "Ganhar 3, 4, 5, 10x mais que meu antigo emprego",
                     "Viajar nos finais de semana",
                     "Acampar com a família",
                     "Paz na consciência e dormir tranquilo"
@@ -867,7 +868,7 @@ function LandingPage() {
                   ))}
                 </div>
 
-                <p className="font-black text-foreground text-xl">Isso é riqueza de verdade pra mim.</p>
+                <p className="font-black text-foreground text-xl">Isso é riqueza de verdade pra mim, e o melhor: trabalhando de casa.</p>
 
                 <p>
                   Eu também não preciso enganar ninguém com promessas absurdas de “dinheiro fácil”, dizendo que você vai ganhar 100 mil reais por mês apertando alguns botões e sem praticamente trabalhar.
