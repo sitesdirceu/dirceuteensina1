@@ -851,20 +851,19 @@ function LandingPage() {
                   <br />Pra mim, riqueza é diferente.
                 </p>
 
-                <div className="relative my-8 group">
+                <div className="relative my-8 group flex justify-center">
                   <div
-                    className="absolute -inset-1 rounded-3xl opacity-60 blur-2xl transition duration-500 group-hover:opacity-90"
+                    className="absolute inset-0 rounded-3xl opacity-60 blur-2xl transition duration-500 group-hover:opacity-90 animate-pulse-soft"
                     style={{ backgroundImage: "var(--gradient-primary)" }}
                   />
-                  <div className="relative overflow-hidden rounded-3xl border-2 border-primary/20 shadow-2xl">
+                  <div className="relative overflow-hidden rounded-3xl border-2 border-primary/20 shadow-2xl max-w-2xl w-full">
                     <img
                       src={dirceuFamilia}
                       alt="Dirceu com sua família — riqueza de verdade"
-                      loading="lazy"
-                      className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105 animate-pulse-soft"
+                      className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-center">
                       <p className="text-foreground font-bold text-sm md:text-base italic drop-shadow-lg">
                         Minha família — o que realmente importa.
                       </p>
