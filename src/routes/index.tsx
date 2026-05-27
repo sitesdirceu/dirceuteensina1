@@ -893,7 +893,7 @@ function LandingPage() {
                 </p>
 
                 <p className="text-foreground font-black text-xl">
-                  Eu vou te ensinar tudo que aprendi nesses anos trabalhando online — de forma transparente, prática e sem promessas falsas.
+                  Eu vou te ensinar essa estratégia de landing pages — de forma transparente, prática e sem promessas falsas.
                 </p>
               </div>
             </div>
