@@ -940,7 +940,7 @@ function LandingPage() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
+          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
             {[
               { label: "Dropshipping", icon: Laptop },
               { label: "Afiliados", icon: Users },
@@ -949,7 +949,6 @@ function LandingPage() {
               { label: "Cursos Online", icon: Play },
               { label: "Infoprodutor", icon: Zap },
               { label: "Coprodutor", icon: Target },
-              { label: "Estratégia Digital", icon: Cpu }
             ].map((item, i) => (
               <div 
                 key={i} 
