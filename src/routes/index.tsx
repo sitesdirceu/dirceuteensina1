@@ -922,6 +922,62 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* ÁREA DE MEMBROS PREVIEW */}
+      <section className="border-t border-border bg-gradient-to-b from-card/30 to-background py-24 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+              <Play className="h-3.5 w-3.5" /> Por Dentro do Método
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">
+              O Que Você Vai{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "var(--gradient-primary)" }}
+              >
+                Aprender na Prática
+              </span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
+              Dê uma olhada exclusiva na nossa área de membros e veja exatamente como eu vou te guiar passo a passo rumo à sua liberdade.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-5xl">
+            <div className="relative group">
+              <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 opacity-75 blur-2xl transition duration-500 group-hover:opacity-100" />
+              <div className="relative aspect-video w-full overflow-hidden rounded-[2rem] border-4 border-border bg-black shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]">
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/BghW787C8a0?rel=0&modestbranding=1"
+                  title="O que você vai aprender na área de membros"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              {[
+                { icon: GraduationCap, title: "Passo a Passo", desc: "Aulas direto ao ponto, sem enrolação." },
+                { icon: Layers, title: "Modelos Prontos", desc: "Copie e cole estratégias validadas." },
+                { icon: Shield, title: "Suporte Direto", desc: "Eu pessoalmente tiro suas dúvidas." }
+              ].map((item, i) => (
+                <div key={i} className="p-6 rounded-2xl border border-border bg-card/50 backdrop-blur-sm">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <item.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* PERSONAS */}
       <section className="border-t border-border bg-card/30 py-20">
         <div className="container mx-auto px-4">
