@@ -1366,7 +1366,7 @@ function LandingPage() {
               <span>|</span>
               <Link to="/afiliadolpsls" className="hover:text-primary">Afiliados</Link>
             </div>
-            <p className="mt-[60px]">© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
+            <p className="mt-[60px] pb-[60px]">© Desde 2023 Dirceu Te Ensina. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
