@@ -940,7 +940,7 @@ function LandingPage() {
               </span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
-              Dê uma olhada exclusiva na nossa área de membros e veja exatamente como eu vou te guiar passo a passo rumo à sua liberdade.
+              Veja exatamente o que você vai fazer para faturar seus primeiros R$ 50, R$ 100, R$ 300 e até R$ 1.000 por cada página criada com Inteligência Artificial.
             </p>
           </div>
 
