@@ -1550,6 +1550,57 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* IMPOSSIBLE NOT TO HAVE RESULTS SECTION */}
+      <section className="py-24 bg-primary/5 relative overflow-hidden border-t border-primary/20">
+        <div className="absolute top-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center space-y-6">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary bg-primary/10 px-6 py-2 text-sm font-black uppercase tracking-widest text-primary animate-pulse">
+                <Zap className="h-5 w-5" /> RISCO ZERO. LUCRO CERTO.
+              </div>
+              
+              <h2 className="text-4xl md:text-7xl font-black tracking-tighter leading-none">
+                É PRATICAMENTE <br />
+                <span className="text-primary underline decoration-primary/30 decoration-8 underline-offset-8">IMPOSSÍVEL</span> <br />
+                NÃO TER RESULTADO
+              </h2>
+
+              <div className="space-y-6 text-xl md:text-2xl font-medium text-muted-foreground leading-relaxed">
+                <p>
+                  Com o que eu vou te entregar, no <span className="text-foreground font-bold">mínimo do mínimo</span>, você paga o seu investimento nesse treinamento logo na primeira semana.
+                </p>
+                
+                <p>
+                  O valor que você está pagando hoje é <span className="text-foreground font-bold uppercase underline decoration-primary decoration-4">muitooooooo baixooooo</span> perto da riqueza de informações que estão lá dentro. 
+                </p>
+
+                <div className="bg-card p-8 rounded-[2.5rem] border-2 border-primary shadow-[0_20px_50px_rgba(var(--primary-rgb),0.1)] relative">
+                  <p className="text-foreground font-black text-2xl md:text-3xl leading-tight">
+                    "Qualquer pessoa que aprende essa habilidade de criar Landing Pages <span className="text-primary underline">NUNCA MAIS FICA SEM DINHEIRO</span> no bolso até o fim da vida."
+                  </p>
+                </div>
+
+                <p className="font-bold text-foreground">
+                  Você está adquirindo uma habilidade que o mercado implora para contratar todos os dias. O seu único "risco" é aprender algo que pode transformar sua realidade financeira para sempre.
+                </p>
+              </div>
+
+              <div className="pt-8">
+                <a
+                  href="#oferta"
+                  className="group relative inline-flex items-center justify-center gap-4 overflow-hidden rounded-full bg-primary px-10 py-5 text-2xl font-black text-primary-foreground transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.4)] active:scale-95"
+                >
+                  <span>SOU EU QUE QUERO ESSA HABILIDADE!</span>
+                  <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+      </section>
+
       {/* FAQ */}
       <section className="border-t border-border bg-card/30 py-20">
         <div className="container mx-auto px-4">
