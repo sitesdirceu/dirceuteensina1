@@ -399,9 +399,6 @@ function LandingPage() {
                 </span>
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
               </a>
-              <p className="flex items-center gap-2 text-sm font-bold text-primary animate-pulse">
-                <Users className="h-4 w-4" /> 127 pessoas entraram nas últimas 24h
-              </p>
             </div>
 
             <p className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">
