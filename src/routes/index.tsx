@@ -891,7 +891,10 @@ function LandingPage() {
                   <p className="text-lg font-bold text-primary mb-2">Sobre as ferramentas:</p>
                   <p className="text-muted-foreground leading-relaxed">
                     Você pode trabalhar usando um <span className="text-foreground font-bold">notebook ou computador com acesso à internet</span>. 
-                    Até dá para fazer pelo celular, mas você ficará um pouco limitado, pois as ferramentas funcionam muito melhor no computador.
+                    Até pode começar pelo celular se ficou interessado no treinamento. Entre e, se gostar do que vai ver na área de membros, você pode adquirir um notebook ou computador usado na <span className="text-foreground font-bold">OLX ou Marketplace do Facebook</span>.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    <span className="text-foreground font-bold text-primary">NÃO PRECISA DE UM COMPUTADOR NOVO, UM SIMPLES JÁ BASTA.</span> O importante é que você vai aprender uma nova habilidade, e isso ninguém vai tirar de você até o fim da sua vida.
                   </p>
                 </div>
                 <p className="text-xl text-muted-foreground font-medium">Sem enrolação. Sem linguagem complicada. Sem precisar “ser expert”.</p>
