@@ -771,7 +771,7 @@ function LandingPage() {
               <div className="bg-background rounded-[1.8rem] p-8 md:p-12 text-center space-y-6">
                 <p className="text-xl font-bold uppercase tracking-widest text-primary">E o melhor:</p>
                 <h2 className="text-3xl md:text-5xl font-black leading-tight">
-                  Cada cliente pode pagar de <span className="text-primary">R$300 até R$5.000+</span> por uma landing page.
+                  Cada cliente pode pagar de <span className="text-primary">R$300 até R$1.000+</span> por uma landing page.
                 </h2>
                 <div className="h-px bg-border w-full max-w-xs mx-auto" />
                 <p className="text-2xl font-bold">Agora imagine isso:</p>
