@@ -872,7 +872,7 @@ function LandingPage() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                 {[
                   { text: "Trabalhar de casa", icon: Home },
-                  { text: "Usar apenas notebook e internet", icon: Laptop },
+                  { text: "Notebook ou Computador com internet", icon: Laptop },
                   { text: "Criar páginas usando IA", icon: Cpu },
                   { text: "Cobrar por projeto", icon: DollarSign },
                   { text: "Escalar para vários clientes", icon: Users },
@@ -887,6 +887,13 @@ function LandingPage() {
 
               <div className="text-center space-y-4 max-w-2xl mx-auto">
                 <p className="text-2xl font-bold">Tudo isso aprendendo passo a passo, clique a clique.</p>
+                <div className="bg-primary/5 border border-primary/20 p-6 rounded-2xl mb-6">
+                  <p className="text-lg font-bold text-primary mb-2">Sobre as ferramentas:</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Você pode trabalhar usando um <span className="text-foreground font-bold">notebook ou computador com acesso à internet</span>. 
+                    Até dá para fazer pelo celular, mas você ficará um pouco limitado, pois as ferramentas funcionam muito melhor no computador.
+                  </p>
+                </div>
                 <p className="text-xl text-muted-foreground font-medium">Sem enrolação. Sem linguagem complicada. Sem precisar “ser expert”.</p>
               </div>
             </div>
