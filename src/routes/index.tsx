@@ -805,60 +805,7 @@ function LandingPage() {
               </p>
             </div>
 
-            <div className="space-y-12 pt-12">
-              <div className="text-center">
-                <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-4">
-                  O Brasil está vivendo um <span className="text-primary italic">BOOM</span> de pequenos negócios
-                </h2>
-                <p className="text-xl font-bold text-muted-foreground">O próprio Sebrae revelou que:</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  "97% das micro e pequenas empresas continuam em operação",
-                  "O setor de serviços lidera o crescimento",
-                  "Estados do Sul e Sudeste concentram milhões de empresas ativas",
-                  "Santa Catarina está entre os estados mais empreendedores do país"
-                ].map((item, i) => (
-                  <div key={i} className="bg-card border border-border p-6 rounded-2xl flex items-start gap-4">
-                    <CheckCircle2 className="w-6 h-6 text-[var(--success)] shrink-0 mt-1" />
-                    <span className="font-bold text-lg leading-tight">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-primary/5 border-2 border-primary/20 p-10 rounded-[2.5rem] text-center space-y-6">
-                <p className="text-xl font-medium">Isso significa uma coisa:</p>
-                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-primary italic">
-                  Oportunidade em TODO LUGAR.
-                </h2>
-                <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-xl font-bold opacity-60">
-                  <span>Na sua cidade.</span>
-                  <span>No seu bairro.</span>
-                  <span>No comércio local.</span>
-                  <span>Nos negócios próximos.</span>
-                </div>
-                <div className="h-px bg-border w-full" />
-                <p className="text-xl md:text-2xl font-medium">
-                  E a maioria desses empresários precisa urgentemente:
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {[
-                    "Mais clientes", "Mais presença online", "Mais vendas", "Mais profissionalismo"
-                  ].map((item, i) => (
-                    <div key={i} className="flex flex-col items-center gap-2">
-                      <div className="w-10 h-10 bg-[var(--success)]/10 rounded-full flex items-center justify-center">
-                        <CheckCircle2 className="w-5 h-5 text-[var(--success)]" />
-                      </div>
-                      <span className="font-bold text-sm">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-2xl font-black pt-6 italic">É exatamente aí que você entra.</p>
-              </div>
-            </div>
-
-            <div className="py-24 space-y-12">
+            <div className="py-16 space-y-12">
               <div className="text-center">
                 <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-4 italic">
                   Uma habilidade que pode mudar sua renda
@@ -895,72 +842,6 @@ function LandingPage() {
                   </p>
                 </div>
                 <p className="text-xl text-muted-foreground font-medium">Sem enrolação. Sem linguagem complicada. Sem precisar “ser expert”.</p>
-              </div>
-            </div>
-
-            <div className="bg-foreground text-background p-10 md:p-16 rounded-[3rem] space-y-12 relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-8 opacity-10">
-                <Zap className="w-48 h-48 text-background" />
-              </div>
-              
-              <div className="relative z-10 space-y-8">
-                <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-tight italic">
-                  Você está entrando na hora certa
-                </h2>
-                <p className="text-xl md:text-2xl font-medium leading-relaxed opacity-90">
-                  A verdade é simples: <span className="font-black text-white">Quem aprender agora vai sair MUITO na frente.</span>
-                </p>
-                <p className="text-xl font-bold opacity-80">Porque nos próximos anos:</p>
-                <div className="space-y-4">
-                  {[
-                    "Mais empresas vão entrar na internet",
-                    "Mais negócios vão precisar vender online",
-                    "Mais empresários vão procurar profissionais que resolvam isso rápido"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4">
-                      <Zap className="w-6 h-6 text-yellow-400 shrink-0" />
-                      <span className="text-xl font-bold">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-2xl md:text-3xl font-black italic pt-4">
-                  E quem souber criar landing pages terá uma habilidade extremamente valiosa.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center space-y-12 py-12">
-              <h2 className="text-3xl md:text-5xl font-black leading-tight italic">
-                Talvez essa seja a oportunidade <br className="hidden md:block" />
-                <span className="text-primary underline decoration-white/10 underline-offset-8">que faltava para você:</span>
-              </h2>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {[
-                  "Fazer renda extra", "Sair do aperto financeiro", "Trabalhar pela internet",
-                  "Conquistar liberdade", "Largar a CLT no futuro", "Criar um negócio digital"
-                ].map((item, i) => (
-                  <div key={i} className="bg-[var(--success)]/10 border border-[var(--success)]/20 p-4 rounded-xl flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[var(--success)] shrink-0" />
-                    <span className="font-bold text-sm md:text-base leading-tight">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-12 space-y-8">
-                <h3 className="text-2xl md:text-4xl font-black italic leading-tight">
-                  Você vai assistir essa oportunidade passar… <br className="hidden md:block" />
-                  ou vai aprender uma habilidade que pode transformar sua vida?
-                </h3>
-                <div className="flex justify-center">
-                  <a 
-                    href="#oferta"
-                    className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-primary px-10 py-6 text-xl font-black uppercase tracking-wider text-primary-foreground shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)] transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
-                  >
-                    <span>SIM, EU QUERO ESSA OPORTUNIDADE</span>
-                    <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
