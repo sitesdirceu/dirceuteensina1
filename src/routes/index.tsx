@@ -335,19 +335,19 @@ function LandingPage() {
               </span>
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Aprenda comigo agora em 2026 passo a passo, clique a clique como
-              eu faço para faturar uma renda extra de{" "}
+              Pare de pular de galho em galho e de gastar com cursos que não te levam a lugar nenhum. A sua oportunidade está batendo à porta agora: aprenda comigo, passo a passo e clique a clique, a dominar a habilidade mais valiosa de 2026.
+              <br /><br />
+              Eu vou te mostrar exatamente como faturar uma renda extra de{" "}
               <span className="font-semibold text-primary">R$50</span> a{" "}
-              <span className="font-semibold text-primary">R$4986,93</span> por
-              mês ou até mais trabalhando de casa, criando e vendendo{" "}
+              <span className="font-semibold text-primary">R$4.986,93</span> por mês (ou muito mais) trabalhando de casa, criando e vendendo{" "}
               <span className="font-extrabold text-primary underline decoration-primary/40 underline-offset-4">
-                Landing Pages de serviços Locais
+                Landing Pages para Serviços Locais
               </span>{" "}
               usando{" "}
               <span className="font-extrabold text-primary underline decoration-primary/40 underline-offset-4">
                 Inteligência Artificial sem gastar um único centavo
               </span>
-              . Se eu consigo, você também consegue!
+              . Esqueça as distrações e foque aqui; se você tiver foco, o seu resultado é garantido!
             </p>
 
             <div className="mt-8 transform transition-all hover:scale-105">
