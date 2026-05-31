@@ -988,30 +988,12 @@ function LandingPage() {
 
                 <p className="font-black text-foreground text-xl">Isso é riqueza de verdade pra mim, e o melhor: trabalhando de casa.</p>
 
-                <p>
-                  Eu também não preciso enganar ninguém com promessas absurdas de “dinheiro fácil”, dizendo que você vai ganhar 100 mil reais por mês apertando alguns botões e sem praticamente trabalhar.
-                </p>
-
-                <p>E o mais triste é que ainda tem muita gente que acredita nisso.</p>
-
                 <p className="bg-foreground text-background p-6 rounded-xl font-bold italic">
                   "A verdade é simples: não existe dinheiro fácil. Existe trabalho. Existe aprendizado. Existe estratégia. Existe consistência."
                 </p>
 
-                <p>
-                  A internet pode sim mudar vidas. Mas não através de mágica.
-                </p>
-
-                <p>
-                  E se um dia eu precisar mentir, manipular ou brincar com a esperança das pessoas pra ganhar dinheiro… eu prefiro ficar fora disso e manter minha consciência tranquila.
-                </p>
-
-                <p>
-                  Então, se você já percebeu que não existe fórmula mágica, mas que existem formas reais e honestas de ganhar dinheiro na internet, eu te convido a me acompanhar.
-                </p>
-
                 <p className="text-foreground font-black text-xl">
-                  Eu vou te ensinar essa estratégia de landing pages — de forma transparente, prática e sem promessas falsas.
+                  A internet muda vidas — mas não por mágica. Se você já entendeu isso, eu vou te ensinar essa estratégia de landing pages de forma transparente, prática e sem promessas falsas.
                 </p>
               </div>
             </div>
